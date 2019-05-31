@@ -26,6 +26,25 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
 
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "src/pages/portfolio"
+    create: true
+    slug: "{{slug}}-{{year}}-{{month}}"
+    fields:
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "portfolio-post",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "date" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Video url", name: "url", widget: "string" }
+
   - name: "pages"
     label: "Pages"
     files:
@@ -43,6 +62,7 @@ collections:
           - { label: Image, name: image, widget: image }
           - { label: Heading, name: heading, widget: string }
           - { label: Subheading, name: subheading, widget: string }
+          - { label: Martins, name: martins, widget: string }
           - {
               label: Mainpitch,
               name: mainpitch,
@@ -51,7 +71,6 @@ collections:
                 [
                   { label: Title, name: title, widget: string },
                   { label: Description, name: description, widget: text },
-                  { label: Martins, name: martins, widget: text },
                 ],
             }
           - { label: Description, name: description, widget: string }
