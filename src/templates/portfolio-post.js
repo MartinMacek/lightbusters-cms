@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { kebabCase } from "lodash";
 import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
-import Layout from "../components/Layout";
+import Navbar from "../components/Navbar";
 import Content, { HTMLContent } from "../components/Content";
 
 export const PortfolioPostTemplate = ({
@@ -17,7 +17,8 @@ export const PortfolioPostTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="section">
+    <section className="page">
+      <Navbar />
       {helmet || ""}
       <div className="container content">
         <div className="columns">
@@ -58,25 +59,23 @@ const PortfolioPost = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
-    <Layout>
-      <PortfolioPostTemplate
-        content={post.html}
-        contentComponent={HTMLContent}
-        description={post.frontmatter.description}
-        helmet={
-          <Helmet titleTemplate="%s | Portfolio">
-            <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
-          </Helmet>
-        }
-        tags={post.frontmatter.tags}
-        url={post.frontmatter.url}
-        title={post.frontmatter.title}
-      />
-    </Layout>
+    <PortfolioPostTemplate
+      content={post.html}
+      contentComponent={HTMLContent}
+      description={post.frontmatter.description}
+      helmet={
+        <Helmet titleTemplate="%s | Portfolio">
+          <title>{`${post.frontmatter.title}`}</title>
+          <meta
+            name="description"
+            content={`${post.frontmatter.description}`}
+          />
+        </Helmet>
+      }
+      tags={post.frontmatter.tags}
+      url={post.frontmatter.url}
+      title={post.frontmatter.title}
+    />
   );
 };
 
