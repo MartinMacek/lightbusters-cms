@@ -1,6 +1,4 @@
 @import "~bulma/sass/utilities/initial-variables"
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-
 // Config vars
 // Kaldi logo brand color: #FD461E
 $kaldi-red: #D64000
@@ -12,7 +10,6 @@ $body-color: #333
 $black: #2b2523
 
 body 
-  font-family: "Open Sans", sans-serif
   background-color: black
 
 .navbar .navbar-menu
@@ -173,3 +170,36 @@ footer.footer
   background-image: none
   color: white
   min-height: 100vh
+
+.overlay 
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  height: 100%
+  width: 100%
+  opacity: 0
+  transition: .5s ease
+  background-color: #008CBA
+
+.tile-text 
+  color: white
+  font-size: 20px
+  position: absolute
+  top: 50%
+  left: 50%
+  -webkit-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
+  text-align: center
+
+.tile-container 
+  position: relative
+
+.tile-container:hover .overlay 
+  opacity: 1
+
+.tile-wrapper 
+  display: grid
+  grid-template-columns: repeat(3, 1fr)

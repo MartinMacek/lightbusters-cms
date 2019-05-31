@@ -9,14 +9,12 @@ class PortfolioRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div className="columns is-multiline">
+      <div className="tile-wrapper">
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification`}
-              >
-                <header>
+            <div>
+              <div className="tile-container" key={post.id}>
+                <Link to={post.fields.slug}>
                   {post.frontmatter.featuredimage ? (
                     <div className="featured-thumbnail">
                       <PreviewCompatibleImage
@@ -27,28 +25,48 @@ class PortfolioRoll extends React.Component {
                       />
                     </div>
                   ) : null}
-                  <p className="post-meta">
-                    <Link
-                      className="title has-text-primary is-size-4"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
-                </header>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
-              </article>
+                  <div className="overlay">
+                    <div className="tile-text">
+                      <h3>{post.frontmatter.title}</h3>
+                    </div>
+                  </div>
+
+                  {/*<article className={`blog-list-item tile is-child notification`}>
+                              <header>
+                                {post.frontmatter.featuredimage ? (
+                                  <div className="featured-thumbnail">
+                                    <PreviewCompatibleImage
+                                      imageInfo={{
+                                        image: post.frontmatter.featuredimage,
+                                        alt: `featured image thumbnail for post ${post.title}`
+                                      }}
+                                    />
+                                  </div>
+                                ) : null}
+                                <p className="post-meta">
+                                  <Link
+                                    className="title has-text-primary is-size-4"
+                                    to={post.fields.slug}
+                                  >
+                                    {post.frontmatter.title}
+                                  </Link>
+                                  <span> &bull; </span>
+                                  <span className="subtitle is-size-5 is-block">
+                                    {post.frontmatter.date}
+                                  </span>
+                                </p>
+                              </header>
+                              <p>
+                                {post.excerpt}
+                                <br />
+                                <br />
+                                <Link className="button" to={post.fields.slug}>
+                                  Keep Reading →
+                                </Link>
+                              </p>
+                            </article>*/}
+                </Link>
+              </div>
             </div>
           ))}
       </div>
@@ -86,7 +104,7 @@ export default () => (
                 tags
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 500, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
