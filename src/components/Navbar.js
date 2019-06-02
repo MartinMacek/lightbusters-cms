@@ -73,7 +73,7 @@ const Navbar = class extends React.Component {
                 id="contact-item"
                 className="navbar-item"
                 to="/contact"
-                style={{ marginLeft: "3rem" }}
+                style={{ marginLeft: "2rem" }}
               >
                 <b>Kontakt</b>
               </Link>
