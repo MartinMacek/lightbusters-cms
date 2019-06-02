@@ -26,8 +26,8 @@ export const PortfolioPostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-one-third">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
+            <h1 className="title is-size-2">
+              <b className="gradient-text">{title}</b>
             </h1>
             <p>{description}</p>
             <PostContent content={content} />

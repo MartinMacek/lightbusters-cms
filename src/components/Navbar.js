@@ -67,7 +67,7 @@ const Navbar = class extends React.Component {
           >
             <div className="navbar-end has-text-centered">
               <Link className="navbar-item" to="/portfolio">
-                Portfolio
+                <b>Portfolio</b>
               </Link>
               <Link
                 id="contact-item"
@@ -75,7 +75,7 @@ const Navbar = class extends React.Component {
                 to="/contact"
                 style={{ marginLeft: "3rem" }}
               >
-                Kontakt
+                <b>Kontakt</b>
               </Link>
             </div>
           </div>
