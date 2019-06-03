@@ -190,17 +190,26 @@ footer.footer
   opacity: 1
   color: white
   font-size: 25px
-  position: absolute
-  top: 50%
-  left: 50%
-  -webkit-transform: translate(-50%, -50%)
-  -ms-transform: translate(-50%, -50%)
-  transform: translate(-50%, -50%)
+  // position: absolute  
   text-align: center
   font-weight: 900
 
+.tile-thumbnail 
+  height: 100%
+  width: 100%
+  opacity: .4
+  top: 0
+  left: 0
+  padding: 0
+  transition: all .5s
+
+
+
+
+
 .tile-container 
   position: relative
+  overflow: hidden
 
 .tile-container:hover 
   .overlay 
@@ -210,6 +219,9 @@ footer.footer
     @include gradient
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
+  .tile-thumbnail
+    opacity: 0.6
+    transform: scale(1.2)
 
 .tile-wrapper 
   display: grid
@@ -239,7 +251,7 @@ footer.footer
   columns: 3 200px
   column-gap: 0
   div     
-    display: inline-block
+    display: inline-table
     width: 100%
     
 .post-video

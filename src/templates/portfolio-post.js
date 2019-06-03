@@ -51,16 +51,6 @@ export const PortfolioPostTemplate = ({
               ) : null}
             </div>
             <div className="column is-two-third">
-              {/* <iframe
-                             src="https://player.vimeo.com/video/338177539?byline=0"
-                             title="video"
-                             // className="post-video"
-                             width="640"
-                             height="360"
-                             frameBorder="0"
-                             allow="autoplay; fullscreen"
-                             allowFullScreen
-                           />*/}
               <div
                 style={{
                   padding: "56.25% 0 0 0",
