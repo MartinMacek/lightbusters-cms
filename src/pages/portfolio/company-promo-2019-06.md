@@ -1,6 +1,6 @@
 ---
 templateKey: portfolio-post
-title: Company promo
+title: Forbes Czech
 date: 2019-05-31T22:16:33.903Z
 description: >-
   s dfgfds gsdfg dfgsdf gf dg fdsgh fsdhfgsf dg  dsd sdg sdfg dfsg dsfg sdg
@@ -8,6 +8,6 @@ description: >-
 featuredimage: /img/spacex-wallpaper-background-59812-61601-hd-wallpapers.jpg
 tags:
   - business
-url: 'https://www.youtube.com/watch?v=NthLvAUJvDU'
+url: 'https://vimeo.com/279331823'
 ---
 
