@@ -1,11 +1,12 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import luke from "../../img/luke.png";
+import Layout from "../../components/Layout";
 
 export default class Index extends React.Component {
   render() {
     return (
-      <div className="page">
+      <Layout>
         <Navbar />
         <span>
           <div
@@ -26,7 +27,7 @@ export default class Index extends React.Component {
             </div>
           </div>
         </span>
-      </div>
+      </Layout>
     );
   }
 }

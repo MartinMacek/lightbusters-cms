@@ -6,6 +6,7 @@ import {
   graphql
   //Link
 } from "gatsby";
+import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
 import Content, { HTMLContent } from "../components/Content";
 
@@ -20,34 +21,36 @@ export const PortfolioPostTemplate = ({
   const PostContent = contentComponent || Content;
 
   return (
-    <section className="page">
-      <Navbar />
-      {helmet || ""}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-one-third">
-            <h1 className="title is-size-2">
-              <b className="gradient-text">{title}</b>
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Kategorie</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      {/*<Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>*/}
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+    <Layout>
+      <section>
+        <Navbar />
+        {helmet || ""}
+        <div className="container content">
+          <div className="columns">
+            <div className="column is-one-third">
+              <h1 className="title is-size-2">
+                <b className="gradient-text">{title}</b>
+              </h1>
+              <p>{description}</p>
+              <PostContent content={content} />
+              {tags && tags.length ? (
+                <div style={{ marginTop: `4rem` }}>
+                  <h4>Kategorie</h4>
+                  <ul className="taglist">
+                    {tags.map(tag => (
+                      <li key={tag + `tag`}>
+                        {/*<Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>*/}
+                        {tag}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </Layout>
   );
 };
 
