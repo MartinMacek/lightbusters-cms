@@ -27,6 +27,15 @@ class PortfolioRoll extends React.Component {
 
                 <div className="overlay" />
                 <h3 className="tile-text">{post.frontmatter.title}</h3>
+                <p
+                  style={{
+                    textAlign: "center",
+                    fontWeight: "bold",
+                    color: "gray"
+                  }}
+                >
+                  {post.frontmatter.tags}
+                </p>
 
                 {/*<article className={`blog-list-item tile is-child notification`}>
                               <header>
