@@ -21,6 +21,8 @@ export const PortfolioPostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content;
 
+  const video_id = url.replace("https://vimeo.com/", "");
+
   return (
     <Layout>
       <section>
@@ -49,9 +51,39 @@ export const PortfolioPostTemplate = ({
               ) : null}
             </div>
             <div className="column is-two-third">
-              <video width="320" height="240" controls className="post-video">
-                <source src={url} />
-              </video>
+              {/* <iframe
+                             src="https://player.vimeo.com/video/338177539?byline=0"
+                             title="video"
+                             // className="post-video"
+                             width="640"
+                             height="360"
+                             frameBorder="0"
+                             allow="autoplay; fullscreen"
+                             allowFullScreen
+                           />*/}
+              <div
+                style={{
+                  padding: "56.25% 0 0 0",
+                  position: "relative",
+                  marginBottom: "2rem"
+                }}
+              >
+                <iframe
+                  src={"https://player.vimeo.com/video/" + video_id}
+                  title="video"
+                  style={{
+                    position: "absolute",
+                    top: "0",
+                    left: "0",
+                    width: "100%",
+                    height: "100%"
+                  }}
+                  frameBorder="0"
+                  allow="autoplay; fullscreen"
+                  allowFullScreen
+                />
+              </div>
+              <script src="https://player.vimeo.com/api/player.js" />
             </div>
           </div>
         </div>

@@ -46,6 +46,10 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
 
       <div className="page">{children}</div>
+      <div className="cr">
+        ©LightBusters 2019{" "}
+        <a href="https://www.linkedin.com/in/martinmacek/">Designed by mm</a>
+      </div>
     </div>
   );
 };
