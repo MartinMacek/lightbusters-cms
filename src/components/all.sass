@@ -11,8 +11,8 @@ $black: #2b2523
 
 @mixin gradient
   background: #00F260  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0575E6, #00F260)  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0575E6, #00F260) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top right, #00F260, #0575E6)  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top right,  #00F260, #0575E6) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 body 
   background-color: black
@@ -98,6 +98,8 @@ body
   @include gradient
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
+  -webkit-transition: all .5s ease
+  transition: all .5s ease
 
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
@@ -174,13 +176,15 @@ footer.footer
   right: 0
   height: 100%
   width: 100%
-  opacity: 0
+  opacity: 0.6
   transition: .5s ease
-  background-color: #008CBA
+  background-color: black
+  // @include gradient
 
 .tile-text 
+  opacity: 1
   color: white
-  font-size: 20px
+  font-size: 25px
   position: absolute
   top: 50%
   left: 50%
@@ -188,12 +192,19 @@ footer.footer
   -ms-transform: translate(-50%, -50%)
   transform: translate(-50%, -50%)
   text-align: center
+  font-weight: 900
 
 .tile-container 
   position: relative
 
-.tile-container:hover .overlay 
-  opacity: 1
+.tile-container:hover 
+  .overlay 
+    opacity: 0.2
+    background-color: white
+  .tile-text 
+    @include gradient
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
 
 .tile-wrapper 
   display: grid
@@ -218,6 +229,17 @@ footer.footer
   @include gradient
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
+
+.masonry-with-columns 
+  columns: 3 200px
+  column-gap: 0
+  div     
+    display: inline-block
+    width: 100%
+    
+.post-video
+  width: 100%
+  height: auto
 
 
 

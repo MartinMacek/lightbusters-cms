@@ -9,32 +9,26 @@ class PortfolioRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div className="tile is-ancestor">
+      <div className="masonry-with-columns">
         {posts &&
           posts.map(({ node: post }) => (
-            <div key={post.id}>
-              <div className="tile is-4">
-                <div className="tile-container">
-                  <Link to={post.fields.slug}>
-                    {post.frontmatter.featuredimage ? (
-                      <div className="featured-thumbnail">
-                        <PreviewCompatibleImage
-                          imageInfo={{
-                            image: post.frontmatter.featuredimage,
-                            alt: `featured image thumbnail for post ${
-                              post.title
-                            }`
-                          }}
-                        />
-                      </div>
-                    ) : null}
-                    <div className="overlay">
-                      <div className="tile-text">
-                        <h3>{post.frontmatter.title}</h3>
-                      </div>
-                    </div>
+            <div key={post.id} className="tile-container">
+              <Link to={post.fields.slug}>
+                {post.frontmatter.featuredimage ? (
+                  <div className="featured-thumbnail">
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: post.frontmatter.featuredimage,
+                        alt: `featured image thumbnail for post ${post.title}`
+                      }}
+                    />
+                  </div>
+                ) : null}
 
-                    {/*<article className={`blog-list-item tile is-child notification`}>
+                <div className="overlay" />
+                <h3 className="tile-text">{post.frontmatter.title}</h3>
+
+                {/*<article className={`blog-list-item tile is-child notification`}>
                               <header>
                                 {post.frontmatter.featuredimage ? (
                                   <div className="featured-thumbnail">
@@ -68,9 +62,7 @@ class PortfolioRoll extends React.Component {
                                 </Link>
                               </p>
                             </article>*/}
-                  </Link>
-                </div>
-              </div>
+              </Link>
             </div>
           ))}
       </div>

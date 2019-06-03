@@ -15,6 +15,7 @@ export const PortfolioPostTemplate = ({
   contentComponent,
   description,
   tags,
+  url,
   title,
   helmet
 }) => {
@@ -46,6 +47,11 @@ export const PortfolioPostTemplate = ({
                   </ul>
                 </div>
               ) : null}
+            </div>
+            <div className="column is-two-third">
+              <video width="320" height="240" controls className="post-video">
+                <source src={url} />
+              </video>
             </div>
           </div>
         </div>
@@ -104,6 +110,7 @@ export const pageQuery = graphql`
         title
         description
         tags
+        url
       }
     }
   }
