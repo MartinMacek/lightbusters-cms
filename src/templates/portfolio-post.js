@@ -90,18 +90,23 @@ export const PortfolioPostTemplate = ({
                 />
               </div>
               <script src="https://player.vimeo.com/api/player.js" />
-              <ImageZoom
-                image={{
-                  src: "bridge.jpg",
-                  alt: "Golden Gate Bridge",
-                  className: "img",
-                  style: { width: "50em" }
-                }}
-                zoomImage={{
-                  src: "bridge-big.jpg",
-                  alt: "Golden Gate Bridge"
-                }}
-              />
+
+              {gallery &&
+                gallery.length &&
+                gallery.map(galleryImage => (
+                  <ImageZoom
+                    image={{
+                      src: galleryImage.image,
+                      alt: "small gallery image",
+                      className: "img",
+                      style: { maxHeight: "8em" }
+                    }}
+                    zoomImage={{
+                      src: galleryImage.image,
+                      alt: "big gallery image"
+                    }}
+                  />
+                ))}
             </div>
           </div>
         </div>
@@ -162,7 +167,9 @@ export const pageQuery = graphql`
         description
         tags
         url
-        gallery
+        gallery {
+          image
+        }
       }
     }
   }
