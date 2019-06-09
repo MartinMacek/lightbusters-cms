@@ -6,9 +6,9 @@ description: >-
   s dfgfds gsdfg dfgsdf gf dg fdsgh fsdhfgsf dg  dsd sdg sdfg dfsg dsfg sdg
   dsdfsdfgdfs g dfdghsdfghsfsfhdfg hgdf hdfg hfhdf hgfdg 
 featuredimage: /img/spacex-wallpaper-background-59812-61601-hd-wallpapers.jpg
+coop: Režie - Quentin Tarantino
 tags:
   - business
 url: 'https://vimeo.com/279331823'
-gallery: []
 ---
 
