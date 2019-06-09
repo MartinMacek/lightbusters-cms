@@ -43,10 +43,12 @@ export const PortfolioPostTemplate = ({
               <PostContent content={content} />
               <div className="gradient-divider" />
               <div style={{ marginTop: `3rem` }}>
-                <div className="title-separator">
-                  <h4>Spolupráce s</h4>
-                  <b>{coop}</b>
-                </div>
+                {coop && (
+                  <div className="title-separator">
+                    <h4>Spolupráce s</h4>
+                    <b>{coop}</b>
+                  </div>
+                )}
 
                 <div className="title-separator">
                   <h4>Datum</h4>
@@ -172,9 +174,6 @@ export const pageQuery = graphql`
         tags
         url
         coop
-        galleryImages {
-          image
-        }
       }
     }
   }
