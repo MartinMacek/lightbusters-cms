@@ -17,10 +17,8 @@ export const PortfolioPostTemplate = ({
   description,
   tags,
   url,
-  galleryImages,
   title,
   date,
-  coop,
   helmet
 }) => {
   const PostContent = contentComponent || Content;
@@ -43,12 +41,12 @@ export const PortfolioPostTemplate = ({
               <PostContent content={content} />
               <div className="gradient-divider" />
               <div style={{ marginTop: `3rem` }}>
-                {coop && (
+                {/*coop && (
                   <div className="title-separator">
                     <h4>Spolupráce s</h4>
                     <b>{coop}</b>
                   </div>
-                )}
+                )*/}
 
                 <div className="title-separator">
                   <h4>Datum</h4>
@@ -95,7 +93,7 @@ export const PortfolioPostTemplate = ({
               </div>
               <script src="https://player.vimeo.com/api/player.js" />
 
-              {galleryImages &&
+              {/*galleryImages &&
                 galleryImages.length &&
                 galleryImages.map(galleryImage => (
                   <ImageZoom
@@ -110,7 +108,7 @@ export const PortfolioPostTemplate = ({
                       alt: "big gallery image"
                     }}
                   />
-                ))}
+                ))*/}
             </div>
           </div>
         </div>
@@ -147,8 +145,6 @@ const PortfolioPost = ({ data }) => {
       tags={post.frontmatter.tags}
       url={post.frontmatter.url}
       date={post.frontmatter.date}
-      coop={post.frontmatter.coop}
-      galleryImages={post.frontmatter.galleryImages}
       title={post.frontmatter.title}
     />
   );
@@ -173,7 +169,6 @@ export const pageQuery = graphql`
         description
         tags
         url
-        coop
       }
     }
   }
