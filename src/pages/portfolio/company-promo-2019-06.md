@@ -9,8 +9,6 @@ featuredimage: /img/spacex-wallpaper-background-59812-61601-hd-wallpapers.jpg
 tags:
   - business
 url: 'https://vimeo.com/279331823'
-gallery:
-  - image: /img/4527_original.jpg
-  - image: /img/1.jpg
+gallery: []
 ---
 
