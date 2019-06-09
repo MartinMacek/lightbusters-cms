@@ -9,7 +9,7 @@ import {
 import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
 import Content, { HTMLContent } from "../components/Content";
-import ImageZoom from "react-medium-image-zoom";
+//import ImageZoom from "react-medium-image-zoom";
 
 export const PortfolioPostTemplate = ({
   content,
@@ -18,6 +18,8 @@ export const PortfolioPostTemplate = ({
   tags,
   url,
   title,
+  coop,
+  //gallery,
   date,
   helmet
 }) => {
@@ -41,12 +43,12 @@ export const PortfolioPostTemplate = ({
               <PostContent content={content} />
               <div className="gradient-divider" />
               <div style={{ marginTop: `3rem` }}>
-                {/*coop && (
+                {coop && (
                   <div className="title-separator">
                     <h4>Spolupráce s</h4>
                     <b>{coop}</b>
                   </div>
-                )*/}
+                )}
 
                 <div className="title-separator">
                   <h4>Datum</h4>
@@ -93,9 +95,9 @@ export const PortfolioPostTemplate = ({
               </div>
               <script src="https://player.vimeo.com/api/player.js" />
 
-              {/*galleryImages &&
-                galleryImages.length &&
-                galleryImages.map(galleryImage => (
+              {/*gallery &&
+                gallery.length &&
+                gallery.map(galleryImage => (
                   <ImageZoom
                     image={{
                       src: galleryImage.image,
@@ -144,6 +146,8 @@ const PortfolioPost = ({ data }) => {
       }
       tags={post.frontmatter.tags}
       url={post.frontmatter.url}
+      coop={post.frontmatter.coop}
+      //gallery={post.frontmatter.gallery}
       date={post.frontmatter.date}
       title={post.frontmatter.title}
     />
@@ -168,6 +172,7 @@ export const pageQuery = graphql`
         title
         description
         tags
+        coop
         url
       }
     }
