@@ -23,7 +23,17 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Video url", name: "url", widget: "string" }
+      - {
+          label: "Vimeo url (https://vimeo.com/279331823)",
+          name: "url",
+          widget: "string",
+        }
+      - {
+          label: "Images",
+          name: "gallery",
+          widget: "list",
+          fields: [{ label: "Image", name: "image", widget: "image" }],
+        }
 
   - name: "pages"
     label: "Pages"

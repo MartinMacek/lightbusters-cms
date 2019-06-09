@@ -9,6 +9,7 @@ import {
 import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
 import Content, { HTMLContent } from "../components/Content";
+import ImageZoom from "react-medium-image-zoom";
 
 export const PortfolioPostTemplate = ({
   content,
@@ -16,6 +17,7 @@ export const PortfolioPostTemplate = ({
   description,
   tags,
   url,
+  gallery,
   title,
   helmet
 }) => {
@@ -34,22 +36,35 @@ export const PortfolioPostTemplate = ({
               <h1 className="title is-size-2">
                 <b className="gradient-text">{title}</b>
               </h1>
+
               <p>{description}</p>
               <PostContent content={content} />
               <div className="gradient-divider" />
-              {tags && tags.length ? (
-                <div style={{ marginTop: `4rem` }}>
-                  <h4>Kategorie</h4>
-                  <ul className="taglist">
-                    {tags.map(tag => (
-                      <li key={tag + `tag`}>
-                        {/*<Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>*/}
-                        {tag}
-                      </li>
-                    ))}
-                  </ul>
+              <div style={{ marginTop: `3rem` }}>
+                <div className="title-separator">
+                  <h4>Spolupráce s</h4>
+                  <b>Jméno Příjmení, Jméno Příjmení</b>
                 </div>
-              ) : null}
+
+                <div className="title-separator">
+                  <h4>Datum</h4>
+                  <b>23.5.2018</b>
+                </div>
+
+                {tags && tags.length ? (
+                  <div>
+                    <h4>Kategorie</h4>
+                    <ul className="taglist">
+                      {tags.map(tag => (
+                        <li key={tag + `tag`}>
+                          {/*<Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>*/}
+                          <b>#{tag}</b>
+                        </li>
+                      ))}
+                    </ul>{" "}
+                  </div>
+                ) : null}
+              </div>
             </div>
             <div className="column is-two-third">
               <div
@@ -75,6 +90,18 @@ export const PortfolioPostTemplate = ({
                 />
               </div>
               <script src="https://player.vimeo.com/api/player.js" />
+              <ImageZoom
+                image={{
+                  src: "bridge.jpg",
+                  alt: "Golden Gate Bridge",
+                  className: "img",
+                  style: { width: "50em" }
+                }}
+                zoomImage={{
+                  src: "bridge-big.jpg",
+                  alt: "Golden Gate Bridge"
+                }}
+              />
             </div>
           </div>
         </div>
@@ -110,6 +137,7 @@ const PortfolioPost = ({ data }) => {
       }
       tags={post.frontmatter.tags}
       url={post.frontmatter.url}
+      gallery={post.frontmatter.gallery}
       title={post.frontmatter.title}
     />
   );
@@ -134,6 +162,7 @@ export const pageQuery = graphql`
         description
         tags
         url
+        gallery
       }
     }
   }

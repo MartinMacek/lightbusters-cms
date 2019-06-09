@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-import luke from "../../img/luke.png";
 import Layout from "../../components/Layout";
 
 export default class Index extends React.Component {
@@ -9,21 +8,29 @@ export default class Index extends React.Component {
       <Layout>
         <Navbar />
         <span>
-          <div
-            className="contact-cover"
-            style={{ backgroundImage: "url(" + luke + ")" }}
-          />
-          <div className="contact-content content">
-            <div className="contact-box">
-              <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-                Kontakt
-              </h1>
-              <h1 style={{ marginTop: "4rem" }}>
+          <div className="content">
+            <div className="contact-box center">
+              {/*<h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+                              Kontakt
+                            </h1>*/}
+              <h1 style={{ marginBottom: "2rem" }}>
                 <b className="gradient-text">Lukáš Vojáček</b>
               </h1>
-              <p>+420 773 900 045</p>
 
-              <p>vojacek@lightbusters.cz</p>
+              <div className="contact-content">
+                <div>
+                  <b className="contact-header">Telefon</b>
+                  <p>+420 773 900 045</p>
+                </div>
+                <div>
+                  <b className="contact-header">Email</b>
+                  <p>vojacek@lightbusters.cz</p>
+                </div>
+                <div>
+                  <b className="contact-header">Ič</b>
+                  <p>00909581</p>
+                </div>
+              </div>
             </div>
           </div>
         </span>
