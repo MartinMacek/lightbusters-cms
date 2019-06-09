@@ -29,10 +29,10 @@ collections:
           widget: "string",
         }
       - {
-          label: "Images",
-          name: "gallery",
+          label: "Gallery",
+          name: "galleryImages",
           widget: "list",
-          fields: [{ label: "Image", name: "image", widget: "image" }],
+          field: { label: Image, name: image, widget: image },
         }
 
   - name: "pages"
