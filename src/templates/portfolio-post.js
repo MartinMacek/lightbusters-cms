@@ -17,8 +17,9 @@ export const PortfolioPostTemplate = ({
   description,
   tags,
   url,
-  gallery,
+  //gallery,
   title,
+  date,
   helmet
 }) => {
   const PostContent = contentComponent || Content;
@@ -48,7 +49,7 @@ export const PortfolioPostTemplate = ({
 
                 <div className="title-separator">
                   <h4>Datum</h4>
-                  <b>23.5.2018</b>
+                  <b>{date}</b>
                 </div>
 
                 {tags && tags.length ? (
@@ -91,7 +92,7 @@ export const PortfolioPostTemplate = ({
               </div>
               <script src="https://player.vimeo.com/api/player.js" />
 
-              {gallery &&
+              {/*gallery &&
                 gallery.length &&
                 gallery.map(galleryImage => (
                   <ImageZoom
@@ -106,7 +107,7 @@ export const PortfolioPostTemplate = ({
                       alt: "big gallery image"
                     }}
                   />
-                ))}
+                ))*/}
             </div>
           </div>
         </div>
@@ -142,7 +143,8 @@ const PortfolioPost = ({ data }) => {
       }
       tags={post.frontmatter.tags}
       url={post.frontmatter.url}
-      gallery={post.frontmatter.gallery}
+      date={post.frontmatter.date}
+      //gallery={post.frontmatter.gallery}
       title={post.frontmatter.title}
     />
   );
@@ -162,14 +164,11 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD.MM.YYYY")
         title
         description
         tags
         url
-        gallery {
-          image
-        }
       }
     }
   }
