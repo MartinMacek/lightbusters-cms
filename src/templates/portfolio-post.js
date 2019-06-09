@@ -17,7 +17,7 @@ export const PortfolioPostTemplate = ({
   description,
   tags,
   url,
-  //gallery,
+  gallery,
   title,
   date,
   helmet
@@ -92,7 +92,7 @@ export const PortfolioPostTemplate = ({
               </div>
               <script src="https://player.vimeo.com/api/player.js" />
 
-              {/*gallery &&
+              {gallery &&
                 gallery.length &&
                 gallery.map(galleryImage => (
                   <ImageZoom
@@ -107,7 +107,7 @@ export const PortfolioPostTemplate = ({
                       alt: "big gallery image"
                     }}
                   />
-                ))*/}
+                ))}
             </div>
           </div>
         </div>
@@ -144,7 +144,7 @@ const PortfolioPost = ({ data }) => {
       tags={post.frontmatter.tags}
       url={post.frontmatter.url}
       date={post.frontmatter.date}
-      //gallery={post.frontmatter.gallery}
+      gallery={post.frontmatter.gallery}
       title={post.frontmatter.title}
     />
   );
@@ -169,6 +169,9 @@ export const pageQuery = graphql`
         description
         tags
         url
+        gallery {
+          image
+        }
       }
     }
   }
