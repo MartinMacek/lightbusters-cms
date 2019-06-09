@@ -11,5 +11,7 @@ tags:
   - reklama
   - business
 url: 'https://vimeo.com/272540718'
+gallery:
+  - image: /img/05-img_9915-001.jpg
 ---
 
