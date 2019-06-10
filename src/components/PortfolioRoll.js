@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql, StaticQuery } from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 class PortfolioRoll extends React.Component {
   render() {
@@ -13,7 +14,7 @@ class PortfolioRoll extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div key={post.id} className="tile-container">
-              <Link to={post.fields.slug}>
+              <AniLink fade to={post.fields.slug}>
                 {post.frontmatter.featuredimage ? (
                   <div className="tile-thumbnail featured-thumbnail">
                     <PreviewCompatibleImage
@@ -40,7 +41,7 @@ class PortfolioRoll extends React.Component {
                     ))}
                   </p>
                 </div>
-              </Link>
+              </AniLink>
             </div>
           ))}
       </div>

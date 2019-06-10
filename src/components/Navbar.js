@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import logo from "../img/logo_2.png";
 
@@ -43,9 +44,15 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             {!this.props.no_logo && (
-              <Link to="/" className="navbar-item" title="Logo">
+              <AniLink
+                to="/"
+                className="navbar-item"
+                title="Logo"
+                fade
+                duration={1}
+              >
                 <img src={logo} alt="Kaldi" style={{ width: "145px" }} />
-              </Link>
+              </AniLink>
             )}
 
             {/* Hamburger menu */}
@@ -66,17 +73,24 @@ const Navbar = class extends React.Component {
             style={{ backgroundColor: "transparent" }}
           >
             <div className="navbar-end has-text-centered">
-              <Link className="navbar-item" to="/portfolio">
+              <AniLink
+                className="navbar-item"
+                to="/portfolio"
+                fade
+                duration={1}
+              >
                 <b>Portfolio</b>
-              </Link>
-              <Link
+              </AniLink>
+              <AniLink
                 id="contact-item"
                 className="navbar-item"
                 to="/contact"
+                fade
+                duration={1}
                 style={{ marginLeft: "2rem" }}
               >
                 <b>Kontakt</b>
-              </Link>
+              </AniLink>
             </div>
           </div>
         </div>
