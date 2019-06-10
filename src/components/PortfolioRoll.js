@@ -14,7 +14,12 @@ class PortfolioRoll extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div key={post.id} className="tile-container">
-              <AniLink fade duration={1} to={post.fields.slug}>
+              <AniLink
+                paintDrip
+                color="#black"
+                duration={1}
+                to={post.fields.slug}
+              >
                 {post.frontmatter.featuredimage ? (
                   <div className="tile-thumbnail featured-thumbnail">
                     <PreviewCompatibleImage
