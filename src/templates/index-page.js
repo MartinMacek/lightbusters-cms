@@ -9,6 +9,7 @@ export const IndexPageTemplate = () => (
     <div className="landing">
       <Navbar className="container" />
       {/*<img src={logo} alt="lightbusters" className="center home-image" />*/}
+      <div className="container"><b>Videoproduction</b></div>
     </div>
   </Layout>
 );

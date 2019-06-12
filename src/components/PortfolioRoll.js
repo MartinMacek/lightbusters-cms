@@ -15,8 +15,7 @@ class PortfolioRoll extends React.Component {
           posts.map(({ node: post }) => (
             <div key={post.id} className="tile-container">
               <AniLink
-                paintDrip
-                color="#black"
+                fade
                 duration={1}
                 to={post.fields.slug}
               >

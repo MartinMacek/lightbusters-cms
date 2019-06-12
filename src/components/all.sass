@@ -1,4 +1,8 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Mandali&display=swap')
 // Config vars
 // Kaldi logo brand color: #FD461E
 $kaldi-red: #D64000
@@ -8,6 +12,7 @@ $primary: $kaldi-red
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
+
 
 @mixin gradient
   background: #00F260  /* fallback for old browsers */
@@ -22,6 +27,10 @@ $black: #2b2523
 body 
   background-color: black
   overflow:hidden
+  //font-family: 'Quicksand', sans-serif !important
+  //font-family: 'Dosis', sans-serif !important
+  font-family: 'Muli', sans-serif !important
+  //font-family: 'Mandali', sans-serif !important
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -99,6 +108,11 @@ body
   background-color: transparent !important
   color: lightgray !important  
   font-size: larger
+  background-image: -moz-none
+  background-image: -webkit-none
+  background-image: -webkit-none
+  background-image: -o-none
+  background-image:none
 
 .navbar-item:hover
   @include gradient
@@ -155,11 +169,12 @@ footer.footer
 // landing page
 .landing 
   background: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") no-repeat center center fixed
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
-  background-size: cover
+  -webkit-background-size: 60%
+  -moz-background-size: 60%
+  -o-background-size: 60%
+  background-size: 60% 
   min-height: 100vh
+  background-position: center
   /*font-family: "Open Sans", sans-serif*/
 
 .center 
@@ -203,19 +218,17 @@ footer.footer
   top: 0
   left: 0
   padding: 0
-  transition: all .4s
+
 
 .title-separator
   margin-bottom: 2rem
 
-
-
-
 .tile-container 
   position: relative
-  overflow: hidden
-  padding: 13px
-
+  overflow: hidden !important
+  //padding: 13px
+.content h4
+  color: #555555
 
 .tile-container:hover 
   .overlay 
@@ -225,9 +238,12 @@ footer.footer
     @include gradient
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
-  .tile-thumbnail
+  .tile-thumbnail    
     opacity: 0.6
-    transform: scale(1.1)
+    transform: scale(1.1) 
+    transition: all .5s ease
+
+
 
 .tile-wrapper 
   display: grid
