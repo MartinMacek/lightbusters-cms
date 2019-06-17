@@ -122,7 +122,7 @@ export const PortfolioPostTemplate = ({
               </div>
               <script src="https://player.vimeo.com/api/player.js" />
 
-              <div className="mobile-section">
+              <div className="mobile-section" style={{ marginBottom: "3rem" }}>
                 {images &&
                   images.length &&
                   images.map((galleryImage, key) => (

@@ -277,7 +277,11 @@ footer.footer
 .contact-box
   padding: 8% 10%
   text-align: center
-  border: 1px solid white 
+  border: 15px solid transparent
+  -webkit-border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch  /* Safari 3.1-5 */
+  -o-border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch  /* Opera 11-12.1 */
+  border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch 
+  border-image-slice: 35%
 
 .contact-content
   margin-top: 1rem
