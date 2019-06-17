@@ -9,7 +9,8 @@ import {
 import Layout from "../components/Layout";
 import Navbar from "../components/Navbar";
 import Content, { HTMLContent } from "../components/Content";
-//import ImageZoom from "react-medium-image-zoom";
+import ImageZoom from "react-medium-image-zoom";
+//import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 export const PortfolioPostTemplate = ({
   content,
@@ -19,7 +20,7 @@ export const PortfolioPostTemplate = ({
   url,
   title,
   coop,
-  //gallery,
+  images,
   date,
   helmet
 }) => {
@@ -121,22 +122,26 @@ export const PortfolioPostTemplate = ({
               </div>
               <script src="https://player.vimeo.com/api/player.js" />
 
-              {/*gallery &&
-                gallery.length &&
-                gallery.map(galleryImage => (
-                  <ImageZoom
-                    image={{
-                      src: galleryImage.image,
-                      alt: "small gallery image",
-                      className: "img",
-                      style: { maxHeight: "8em" }
-                    }}
-                    zoomImage={{
-                      src: galleryImage.image,
-                      alt: "big gallery image"
-                    }}
-                  />
-                ))*/}
+              <div className="mobile-section">
+                {images &&
+                  images.length &&
+                  images.map((galleryImage, key) => (
+                    <div key={key}>
+                      <ImageZoom
+                        image={{
+                          src: galleryImage.image.publicURL,
+                          alt: "small gallery image",
+                          className: "img"
+                        }}
+                        zoomImage={{
+                          src: galleryImage.image.publicURL,
+                          alt: "big gallery image",
+                          style: { backgroundColor: "black" }
+                        }}
+                      />
+                    </div>
+                  ))}
+              </div>
             </div>
           </div>
         </div>
@@ -199,6 +204,21 @@ export const pageQuery = graphql`
         tags
         coop
         url
+        images {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 500, quality: 50) {
+                src
+                srcSet
+                aspectRatio
+                sizes
+                base64
+              }
+            }
+            publicURL
+          }
+          alt
+        }
       }
     }
   }
