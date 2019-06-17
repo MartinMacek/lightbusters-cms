@@ -173,7 +173,7 @@ const PortfolioPost = ({ data }) => {
       tags={post.frontmatter.tags}
       url={post.frontmatter.url}
       coop={post.frontmatter.coop}
-      //gallery={post.frontmatter.gallery}
+      images={post.frontmatter.images}
       date={post.frontmatter.date}
     />
   );
@@ -199,6 +199,16 @@ export const pageQuery = graphql`
         tags
         coop
         url
+        images {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 240, quality: 64) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          alt
+        }
       }
     }
   }
