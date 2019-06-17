@@ -10,10 +10,10 @@ class PortfolioRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div className="masonry-with-columns">
+      <div className="portfolioposts">
         {posts &&
           posts.map(({ node: post }) => (
-            <div key={post.id} className="tile-container">
+            <div key={post.id} className="tile-container tile-item">
               <AniLink fade duration={1} to={post.fields.slug}>
                 {post.frontmatter.featuredimage ? (
                   <div className="tile-thumbnail featured-thumbnail">
@@ -27,7 +27,9 @@ class PortfolioRoll extends React.Component {
                 ) : null}
 
                 <div className="center">
-                  <h3 className="tile-text">{post.frontmatter.title}</h3>
+                  <h3 className="tile-text">
+                    <b>{post.frontmatter.title}</b>
+                  </h3>
 
                   <p
                     style={{

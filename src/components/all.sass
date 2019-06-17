@@ -344,6 +344,35 @@ footer.footer
 .img
   max-height: 8rem
 
+.portfolioposts 
+   display: block
+   display: -webkit-flex
+   display: -moz-flex
+   display: flex
+   -webkit-align-items: left
+   -webkit-moz-items: left
+   align-items: left
+   -webkit-justify-content: left
+   -moz-justify-content: left
+   justify-content: left
+   -webkit-flex-direction: row
+   -moz-flex-direction: row
+   flex-direction: row
+   -webkit-flex-wrap: wrap
+   -moz-flex-wrap: wrap
+   flex-wrap: wrap
+   -webkit-flex-flow: row wrap
+   -moz-flex-flow: row wrap
+   flex-flow: row wrap
+   -webkit-align-content: flex-end
+   -moz-align-content: flex-end
+   align-content: flex-end
+
+.tile-item 
+    display: inline-block
+    display: box
+    width: 33.3%
+
 
 
 
@@ -352,6 +381,8 @@ footer.footer
 +tablet-only
   .blog-list-item .featured-thumbnail
     flex-basis: 50%
+  .tile-item    
+    width: 50%
 
 +mobile
   .blog-list-item header
@@ -378,3 +409,5 @@ footer.footer
   .img
     max-height: inherit
     max-width: 50%
+  .tile-item    
+    width: 100%
