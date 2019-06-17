@@ -218,6 +218,8 @@ footer.footer
   top: 0
   left: 0
   padding: 0
+  //transition: all .2s ease-in-out
+  overflow: hidden 
 
 
 .title-separator
@@ -225,10 +227,11 @@ footer.footer
 
 .tile-container 
   position: relative
-  overflow: hidden !important
+  overflow: hidden 
   //padding: 13px
 .content h4
   color: #555555
+
 
 .tile-container:hover 
   .overlay 
@@ -238,10 +241,14 @@ footer.footer
     @include gradient
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
-  .tile-thumbnail    
-    opacity: 0.6
-    transform: scale(1.1) 
-    transition: all .5s ease
+  .tile-thumbnail  
+    -webkit-transform: scale(1.05)
+    -moz-transform: scale(1.05)
+    -o-transform: scale(1.05)
+    transform: scale(1.05)
+ 
+    
+
 
 
 
@@ -259,7 +266,7 @@ footer.footer
   background-position-x: center
 
 .contact-box
-  padding: 10%
+  padding: 8% 10%
   text-align: center
   border: 1px solid white 
 
@@ -299,6 +306,28 @@ footer.footer
   height: 1px
 .contact-header
   color: #333
+.soc-icon
+  filter: invert(80%)
+  width: 20px
+  height: 20px
+
+.soc-icon:hover
+  filter: invert(100%)
+
+.bottom-bar
+  position: absolute
+  bottom: 0px
+  left: 0px
+  right: 0px
+  padding: 46px 0px
+
+.mobile-vid
+  display: none
+
+.desktop-vid
+  display: inherit
+
+
 
 
 
@@ -320,3 +349,12 @@ footer.footer
     display: none
   .contact-content
     margin-left: 0
+  .bottom-bar
+    padding: 0
+    text-align: center
+  .mobile-vid
+    display: inherit
+  .desktop-vid
+    display: none
+  .mobile-section
+    padding: 0rem 1.5rem

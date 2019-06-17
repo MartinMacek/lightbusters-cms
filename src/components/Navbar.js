@@ -72,7 +72,10 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
             style={{ backgroundColor: "transparent" }}
           >
-            <div className="navbar-end has-text-centered">
+            <div
+              className="navbar-end"
+              style={{ textAlign: "right", marginRight: "1em" }}
+            >
               <AniLink
                 className="navbar-item"
                 to="/portfolio"

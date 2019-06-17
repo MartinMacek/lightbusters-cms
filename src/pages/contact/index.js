@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Layout from "../../components/Layout";
+import facebook from "../../img/social/facebook.svg";
+import instagram from "../../img/social/instagram.svg";
+import vimeo from "../../img/social/vimeo.svg";
 
 export default class Index extends React.Component {
   render() {
@@ -30,6 +33,29 @@ export default class Index extends React.Component {
                   <b className="contact-header">Ič</b>
                   <p>00909581</p>
                 </div>
+                <span
+                  style={{
+                    "justify-content": "space-between",
+                    display: "flex",
+                    "margin-top": "2rem"
+                  }}
+                >
+                  <a
+                    title="facebook"
+                    href="https://www.facebook.com/LightBusters.ol/"
+                  >
+                    <img src={facebook} alt="Facebook" class="soc-icon" />
+                  </a>
+                  <a
+                    title="instagram"
+                    href="https://www.instagram.com/lightbusters/"
+                  >
+                    <img src={instagram} alt="Instagram" class="soc-icon" />
+                  </a>
+                  <a title="vimeo" href="https://vimeo.com/user10901553">
+                    <img src={vimeo} alt="Vimeo" class="soc-icon" />
+                  </a>
+                </span>
               </div>
             </div>
           </div>

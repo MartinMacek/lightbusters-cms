@@ -32,9 +32,10 @@ export const PortfolioPostTemplate = ({
       <section>
         <Navbar />
         {helmet || ""}
+
         <div className="container content">
           <div className="columns">
-            <div className="column is-one-third">
+            <div className="column is-one-third mobile-section">
               <h1 className="title is-size-2">
                 <b className="gradient-text">{title}</b>
               </h1>
@@ -42,6 +43,30 @@ export const PortfolioPostTemplate = ({
               <p>{description}</p>
               <PostContent content={content} />
               <div className="gradient-divider" />
+              <div
+                className="mobile-vid"
+                style={{
+                  padding: "56.25% 0 0 0",
+                  position: "relative",
+                  margin: "2rem 0rem"
+                }}
+              >
+                <iframe
+                  src={"https://player.vimeo.com/video/" + video_id}
+                  title="video"
+                  style={{
+                    position: "absolute",
+                    top: "0",
+                    left: "0",
+                    width: "100%",
+                    height: "100%"
+                  }}
+                  frameBorder="0"
+                  allow="autoplay; fullscreen"
+                  allowFullScreen
+                />
+              </div>
+              <script src="https://player.vimeo.com/api/player.js" />
               <div style={{ marginTop: `3rem` }}>
                 {coop && (
                   <div className="title-separator">
@@ -72,6 +97,7 @@ export const PortfolioPostTemplate = ({
             </div>
             <div className="column is-two-third">
               <div
+                className="desktop-vid"
                 style={{
                   padding: "56.25% 0 0 0",
                   position: "relative",
@@ -147,19 +173,19 @@ const PortfolioPost = ({ data }) => {
       tags={post.frontmatter.tags}
       url={post.frontmatter.url}
       coop={post.frontmatter.coop}
-      //gallery={post.frontmatter.gallery}
+      gallery={post.frontmatter.gallery}
       date={post.frontmatter.date}
-      title={post.frontmatter.title}
     />
   );
 };
 
 PortfolioPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.object
+    })
   })
 };
-
 export default PortfolioPost;
 
 export const pageQuery = graphql`
