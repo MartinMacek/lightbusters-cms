@@ -128,6 +128,9 @@ export const PortfolioPostTemplate = ({
                   images.map((galleryImage, key) => (
                     <div key={key}>
                       <ImageZoom
+                        defaultStyles={{
+                          overlay: { backgroundColor: "#000000" }
+                        }}
                         image={{
                           src: galleryImage.image.publicURL,
                           alt: "small gallery image",
