@@ -10,5 +10,8 @@ coop: Petr Novák
 tags:
   - Business
 url: 'https://vimeo.com/297990047'
+images:
+  - alt: dsg
+    image: /img/blog-index.jpg
 ---
 
