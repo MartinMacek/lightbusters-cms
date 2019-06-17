@@ -199,16 +199,6 @@ export const pageQuery = graphql`
         tags
         coop
         url
-        images {
-          image {
-            childImageSharp {
-              fluid(maxWidth: 240, quality: 64) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          alt
-        }
       }
     }
   }
