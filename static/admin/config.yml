@@ -29,12 +29,7 @@ collections:
           name: "url",
           widget: "string",
         }
-      - {
-          label: "Gallery",
-          name: "gallery",
-          widget: "list",
-          field: { label: "Image", name: "image", widget: "image" },
-        }
+      - { label: Image, name: imageitem, widget: image }
 
   - name: "pages"
     label: "Pages"

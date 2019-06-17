@@ -173,7 +173,7 @@ const PortfolioPost = ({ data }) => {
       tags={post.frontmatter.tags}
       url={post.frontmatter.url}
       coop={post.frontmatter.coop}
-      gallery={post.frontmatter.gallery}
+      //gallery={post.frontmatter.gallery}
       date={post.frontmatter.date}
     />
   );
@@ -181,11 +181,10 @@ const PortfolioPost = ({ data }) => {
 
 PortfolioPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object
-    })
+    markdownRemark: PropTypes.object
   })
 };
+
 export default PortfolioPost;
 
 export const pageQuery = graphql`
@@ -200,6 +199,7 @@ export const pageQuery = graphql`
         tags
         coop
         url
+        imageitem
       }
     }
   }
