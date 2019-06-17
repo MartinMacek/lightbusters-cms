@@ -181,6 +181,7 @@ const PortfolioPost = ({ data }) => {
       tags={post.frontmatter.tags}
       url={post.frontmatter.url}
       coop={post.frontmatter.coop}
+      title={post.frontmatter.title}
       images={post.frontmatter.images}
       date={post.frontmatter.date}
     />
