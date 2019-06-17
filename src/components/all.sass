@@ -19,10 +19,19 @@ $black: #2b2523
   //background: -webkit-linear-gradient(to top right, #00F260, #0575E6)  /* Chrome 10-25, Safari 5.1-6 */
   //background: linear-gradient(to top right,  #00F260, #0575E6) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  background-image: -webkit-linear-gradient(to top right, #00F260, #0575E6) /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-  background-image:    -moz-linear-gradient(to top right, #00F260, #0575E6) /* For Firefox (3.6 to 15) */
-  background-image:      -o-linear-gradient(to top right, #00F260, #0575E6) /* For old Opera (11.1 to 12.0) */ 
-  background-image:         linear-gradient(to top right, #00F260, #0575E6) /* Standard syntax; must be last */
+  //background-image: -webkit-linear-gradient(to top right, #00F260, #0575E6) /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  //background-image:    -moz-linear-gradient(to top right, #00F260, #0575E6) /* For Firefox (3.6 to 15) */
+  //background-image:      -o-linear-gradient(to top right, #00F260, #0575E6) /* For old Opera (11.1 to 12.0) */ 
+  //background-image:         linear-gradient(to top right, #00F260, #0575E6) /* Standard syntax; must be last */
+
+  background: -webkit-linear-gradient(left, #00F260, #0575E6)
+  /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffad26), color-stop(50%,#fea026), color-stop(51%,#ff8b00), color-stop(100%,#ff7701)); /* Chrome,Safari4+ */
+  background: -o-linear-gradient(right, #00F260, #0575E6)
+  background: -moz-linear-gradient(right, #00F260, #0575E6)
+  background: linear-gradient(to right, #00F260, #0575E6)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  text-decoration: none
 
 body 
   background-color: black
@@ -301,7 +310,11 @@ footer.footer
   color: #ffffff14
 
 .gradient-divider
-  @include gradient
+  background-image: -webkit-linear-gradient(to top right, #00F260, #0575E6) /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image:    -moz-linear-gradient(to top right, #00F260, #0575E6) /* For Firefox (3.6 to 15) */
+  background-image:      -o-linear-gradient(to top right, #00F260, #0575E6) /* For old Opera (11.1 to 12.0) */ 
+  background-image:         linear-gradient(to top right, #00F260, #0575E6) /* Standard syntax; must be last */
+
   width: 100%
   height: 1px
 .contact-header
