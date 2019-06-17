@@ -10,5 +10,7 @@ coop: Režie - Quentin Tarantino
 tags:
   - business
 url: 'https://vimeo.com/279331823'
+gallery:
+  - /img/1440x960_wallpaper.jpg
 ---
 
