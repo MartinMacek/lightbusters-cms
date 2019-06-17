@@ -16,8 +16,9 @@ export default class Index extends React.Component {
               {/*<h1 className="title is-size-2 has-text-weight-bold is-bold-light">
                               Kontakt
                             </h1>*/}
-              <h1 style={{ marginBottom: "2rem" }}>
-                <b className="gradient-text">Lukáš Vojáček</b>
+              <h1 style={{ marginBottom: "2rem" }} className="gradient-text">
+                <b>Lukáš </b>
+                <b>Vojáček</b>
               </h1>
 
               <div className="contact-content">
@@ -43,16 +44,25 @@ export default class Index extends React.Component {
                   <a
                     title="facebook"
                     href="https://www.facebook.com/LightBusters.ol/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img src={facebook} alt="Facebook" className="soc-icon" />
                   </a>
                   <a
                     title="instagram"
                     href="https://www.instagram.com/lightbusters/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img src={instagram} alt="Instagram" className="soc-icon" />
                   </a>
-                  <a title="vimeo" href="https://vimeo.com/user10901553">
+                  <a
+                    title="vimeo"
+                    href="https://vimeo.com/user10901553"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img src={vimeo} alt="Vimeo" className="soc-icon" />
                   </a>
                 </span>
