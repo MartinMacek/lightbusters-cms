@@ -29,7 +29,16 @@ collections:
           name: "url",
           widget: "string",
         }
-      - { label: Image, name: imageitem, widget: image }
+      - {
+          label: Images,
+          name: images,
+          widget: list,
+          fields:
+            [
+              { label: Image, name: image, widget: image },
+              { label: Alt, name: alt, widget: string },
+            ],
+        }
 
   - name: "pages"
     label: "Pages"

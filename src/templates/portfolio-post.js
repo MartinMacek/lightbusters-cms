@@ -199,7 +199,6 @@ export const pageQuery = graphql`
         tags
         coop
         url
-        imageitem
       }
     }
   }
