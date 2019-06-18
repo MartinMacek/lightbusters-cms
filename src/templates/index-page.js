@@ -12,6 +12,24 @@ export const IndexPageTemplate = () => (
   <Layout>
     <div className="landing">
       <Navbar className="container" />
+      <div className="mobile-socials">
+        <a
+          title="vimeo"
+          href="https://vimeo.com/user10901553"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={vimeo} alt="Vimeo" className="soc-icon" />
+        </a>
+        <a
+          title="instagram"
+          href="https://www.instagram.com/lightbusters/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={instagram} alt="Instagram" className="soc-icon" />
+        </a>
+      </div>
       <div className="ribbon-container">
         <a
           title="vimeo"

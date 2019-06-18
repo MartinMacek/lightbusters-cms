@@ -4,7 +4,6 @@ import Layout from "../../components/Layout";
 import facebook from "../../img/social/facebook.svg";
 import instagram from "../../img/social/instagram.svg";
 import vimeo from "../../img/social/vimeo.svg";
-
 import ribbon from "../../img/ribbon.png";
 
 export default class Index extends React.Component {
@@ -13,26 +12,6 @@ export default class Index extends React.Component {
       <Layout>
         <Navbar />
         <div className="ribbon-container">
-          <a
-            title="vimeo"
-            href="https://vimeo.com/user10901553"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="vimeo-ribbon"
-          >
-            <img
-              src={vimeo}
-              alt="Vimeo"
-              style={{
-                height: "15px",
-                top: "2px",
-                position: "relative",
-                filter: "invert(100%)"
-              }}
-            />{" "}
-            Vimeo
-          </a>
-          <img src={ribbon} alt="ribbon" className="ribbon-img" />
           <a
             title="vimeo"
             href="https://www.instagram.com/lightbusters/"
@@ -51,6 +30,26 @@ export default class Index extends React.Component {
               }}
             />{" "}
             Instagram
+          </a>
+          <img src={ribbon} alt="ribbon" className="ribbon-img" />
+          <a
+            title="vimeo"
+            href="https://vimeo.com/user10901553"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="vimeo-ribbon"
+          >
+            <img
+              src={vimeo}
+              alt="Vimeo"
+              style={{
+                height: "15px",
+                top: "2px",
+                position: "relative",
+                filter: "invert(100%)"
+              }}
+            />{" "}
+            Vimeo
           </a>
         </div>
         <span>
@@ -82,19 +81,19 @@ export default class Index extends React.Component {
                 </div>
                 <span
                   style={{
-                    justifyContent: "space-between",
+                    justifyContent: "space-around",
                     display: "flex",
                     marginTop: "2rem"
                   }}
                 >
-                  <a
-                    title="facebook"
-                    href="https://www.facebook.com/LightBusters.ol/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={facebook} alt="Facebook" className="soc-icon" />
-                  </a>
+                  {/*<a
+                                      title="facebook"
+                                      href="https://www.facebook.com/LightBusters.ol/"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      <img src={facebook} alt="Facebook" className="soc-icon" />
+                                    </a>*/}
                   <a
                     title="instagram"
                     href="https://www.instagram.com/lightbusters/"
