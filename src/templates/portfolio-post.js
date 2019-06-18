@@ -37,7 +37,7 @@ export const PortfolioPostTemplate = ({
         <div className="container content">
           <div className="columns">
             <div className="column is-one-third mobile-section">
-              <h1 className="title is-size-2">
+              <h1 className="title is-size-3">
                 <b className="gradient-text">{title}</b>
               </h1>
 
@@ -122,7 +122,7 @@ export const PortfolioPostTemplate = ({
               </div>
               <script src="https://player.vimeo.com/api/player.js" />
 
-              <div className="mobile-section" style={{ marginBottom: "3rem" }}>
+              <div className="mobile-galery" style={{ marginBottom: "3rem" }}>
                 {images &&
                   images.length &&
                   images.map((galleryImage, key) => (

@@ -277,12 +277,13 @@ footer.footer
 .contact-box
   padding: 8% 10%
   text-align: center
-  border: 15px solid transparent
-  -moz-border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch
-  -webkit-border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch  /* Safari 3.1-5 */
-  -o-border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch  /* Opera 11-12.1 */
-  border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 fill stretch 
-  border-image-slice: 35%
+  border: 1px solid white
+  //border: 15px solid transparent
+  //-moz-border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch
+  //-webkit-border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch  /* Safari 3.1-5 */
+  //-o-border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch  /* Opera 11-12.1 */
+  //border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 fill stretch 
+  //border-image-slice: 35%
 
 .contact-content
   margin-top: 1rem
@@ -378,8 +379,39 @@ footer.footer
     display: box
     width: 33.3%
 
+.ribbon-container
+  position: absolute
+  right: 0px
+  top: 60%
 
+.ribbon-img
+  max-height: 170px
 
+.vimeo-ribbon
+  position: absolute
+  right: 16px
+  top: 36px
+  color: white
+  transform: rotate(-28deg)
+  -webkit-transform: rotate(-28deg)
+  font-weight: bold
+  opacity: 0.7
+.vimeo-ribbon:hover
+  color: white
+  opacity: 1
+
+.instagram-ribbon
+  position: absolute
+  right: 0px
+  top: 108px  
+  color: white
+  -webkit-transform: rotate(28deg)
+  transform: rotate(28deg)
+  font-weight: bold
+  opacity: 0.7
+.instagram-ribbon:hover
+  color: white
+  opacity: 1
 
 
 // responsiveness
@@ -411,6 +443,8 @@ footer.footer
     display: none
   .mobile-section
     padding: 0rem 1.5rem
+  .mobile-galery
+    padding: 0px 13px
   .img
     max-height: inherit
     max-width: 50%
