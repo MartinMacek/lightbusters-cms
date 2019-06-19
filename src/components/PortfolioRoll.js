@@ -37,7 +37,9 @@ class PortfolioRoll extends React.Component {
                 ) : null}
 
                 <div className="center">
-                  <h3 className="tile-text">{post.frontmatter.title}</h3>
+                  <h3>
+                    <b className="tile-text">{post.frontmatter.title}</b>
+                  </h3>
 
                   <p
                     style={{

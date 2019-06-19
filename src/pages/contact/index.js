@@ -81,7 +81,7 @@ export default class Index extends React.Component {
                 </div>
                 <span
                   style={{
-                    justifyContent: "space-around",
+                    justifyContent: "space-evenly",
                     display: "flex",
                     marginTop: "2rem"
                   }}
