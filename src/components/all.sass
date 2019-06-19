@@ -113,17 +113,20 @@ body
 .margin-top-0
   margin-top: 0 !important
 
-.navbar-item   
+.navbar-text 
+  display: inline
   color: #363636   
   font-size: larger  
   font-weight: bold
   background-color: black
 
-a.navbar-item:focus
+
+
+a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-item.is-active
   background-color: transparent !important
   color: lightgray !important
 
-.navbar-item:hover    
+.navbar-text:hover    
   @include gradient 
   -webkit-transition: all .5s ease
   transition: all .5s ease
@@ -211,6 +214,7 @@ footer.footer
   // @include gradient
 
 .tile-text 
+  display: inline
   opacity: 1
   color: white
   font-size: 25px
@@ -435,7 +439,7 @@ footer.footer
   div
     padding: 5px
     width: 25%
-    
+
 
 // responsiveness
 +tablet-only

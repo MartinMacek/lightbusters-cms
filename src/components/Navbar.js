@@ -77,12 +77,12 @@ const Navbar = class extends React.Component {
               style={{ textAlign: "right", marginRight: "1em" }}
             >
               <AniLink
-                className="navbar-item"
                 to="/portfolio"
                 fade
                 duration={1}
+                className="navbar-item"
               >
-                Portfolio
+                <span className="navbar-text">Portfolio</span>
               </AniLink>
               <AniLink
                 id="contact-item"
@@ -92,7 +92,7 @@ const Navbar = class extends React.Component {
                 duration={1}
                 style={{ marginLeft: "2rem" }}
               >
-                Kontakt
+                <span className="navbar-text">Kontakt</span>
               </AniLink>
             </div>
           </div>
