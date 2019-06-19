@@ -28,7 +28,7 @@ $black: #2b2523
   /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffad26), color-stop(50%,#fea026), color-stop(51%,#ff8b00), color-stop(100%,#ff7701)); /* Chrome,Safari4+ */
   background: -o-linear-gradient(right, #00F260, #0575E6)
   background: -moz-linear-gradient(right, #00F260, #0575E6)
-  background: linear-gradient(to right, #00F260, #0575E6)
+  background: linear-gradient(to right, #00F260, #0575E6)  
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
   text-decoration: none
@@ -128,8 +128,8 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 
 .navbar-text:hover    
   @include gradient 
-  -webkit-transition: all .5s ease
-  transition: all .5s ease
+  -webkit-transition: all .2s ease
+  transition: all .2s ease
 
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
@@ -213,10 +213,10 @@ footer.footer
   background-color: black
   // @include gradient
 
-.tile-text 
-  display: inline
+.tile-text  
+  display: inline 
   opacity: 1
-  color: white
+  color: white 
   font-size: 25px
   text-align: center
   font-weight: bold
@@ -259,9 +259,9 @@ footer.footer
     opacity: 0.2
     background-color: white
   .tile-text 
-    @include gradient
-    -webkit-background-clip: text
-    -webkit-text-fill-color: transparent
+    @include gradient  
+    -webkit-transition: all .2s ease
+    transition: all .2s ease
   .tile-thumbnail  
     -webkit-transform: scale(1.05)
     -moz-transform: scale(1.05)

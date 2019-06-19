@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql, StaticQuery } from "gatsby";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
+//import PreviewCompatibleImage from "./PreviewCompatibleImage";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 class PortfolioRoll extends React.Component {
