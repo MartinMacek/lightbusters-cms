@@ -74,13 +74,6 @@ export const PortfolioPostTemplate = ({
                   <b>Someone</b>
                 </div>
 
-                {coop && (
-                  <div className="title-separator">
-                    <h4>Spolupráce s</h4>
-                    <b>{coop}</b>
-                  </div>
-                )}
-
                 <div className="title-separator">
                   <h4>Datum</h4>
                   <b>{date}</b>
@@ -99,6 +92,12 @@ export const PortfolioPostTemplate = ({
                     </ul>{" "}
                   </div>
                 ) : null}
+                {coop && (
+                  <div className="title-separator">
+                    <h4>Spolupráce s</h4>
+                    <b>{coop}</b>
+                  </div>
+                )}
               </div>
             </div>
             <div className="column is-two-third">

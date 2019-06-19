@@ -19,17 +19,18 @@ collections:
           default: "portfolio-post",
         }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "date" }
+      - { label: "Klient", name: "client", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - { label: "Publish Date", name: "date", widget: "date" }
       - { label: "Cooperation", name: "coop", widget: "text" }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Tags", name: "tags", widget: "list" }
       - {
           label: "Vimeo url (https://vimeo.com/279331823)",
           name: "url",
           widget: "string",
         }
-      - { label: "Klient", name: "client", widget: "string" }
+
       - {
           label: Images,
           name: images,
@@ -42,7 +43,6 @@ collections:
                 widget: image,
                 default: "/img/logo_2.png",
               },
-              { label: Alt, name: alt, widget: string },
             ],
         }
 

@@ -116,8 +116,13 @@ body
 .navbar-item   
   color: lightgray  
   font-size: larger  
+  background-color: black
 
-.navbar-item:hover
+a.navbar-item:focus
+  background-color: transparent !important
+  color: lightgray !important
+
+.navbar-item:hover  
   @include gradient
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
@@ -259,6 +264,7 @@ footer.footer
     -moz-transform: scale(1.05)
     -o-transform: scale(1.05)
     transform: scale(1.05)
+    opacity: .6
  
     
 
@@ -421,7 +427,7 @@ footer.footer
   display: none
   position: absolute
   right: 0px
-  top: 60%  
+  top: 78%  
   a 
     padding: 15px 30px
 
