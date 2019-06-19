@@ -10,8 +10,11 @@ coop: Režie - Quentin Tarantino
 tags:
   - business
 url: 'https://vimeo.com/279331823'
+client: Forbes česko
 images:
   - alt: yxf
     image: /img/chemex.jpg
+  - alt: fsdrc
+    image: /img/1.jpg
 ---
 
