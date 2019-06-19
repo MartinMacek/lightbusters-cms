@@ -34,7 +34,7 @@ const TemplateWrapper = ({ children }) => {
 
         <link
           rel="mask-icon"
-          href="/img/safari-pinned-tab.svg"
+          href="/img/apple-touch-icon.png"
           color="#ff4400"
         />
         <meta name="theme-color" content="#fff" />
@@ -42,12 +42,12 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
-        <meta property="og:image" content="/img/og-image.jpg" />
+        <meta property="og:image" content="/img/og-image.png" />
       </Helmet>
 
       <div className="page">{children}</div>
       <div className="cr">
-        ©LightBusters 2019{" "}
+        ©LightBusters 2019
         {/*<a href="https://www.linkedin.com/in/martinmacek/">Designed by MM</a>*/}
       </div>
     </div>
