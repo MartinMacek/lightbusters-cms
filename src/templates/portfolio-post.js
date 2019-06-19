@@ -19,6 +19,7 @@ export const PortfolioPostTemplate = ({
   tags,
   url,
   title,
+  client,
   coop,
   images,
   date,
@@ -37,7 +38,9 @@ export const PortfolioPostTemplate = ({
         <div className="container content">
           <div className="columns">
             <div className="column is-one-third mobile-section">
-              <h1 className="title is-size-3 gradient-text">{title}</h1>
+              <h1 className="title is-size-3">
+                <b className="gradient-text">{title}</b>
+              </h1>
 
               <p>{description}</p>
               <PostContent content={content} />
@@ -67,13 +70,15 @@ export const PortfolioPostTemplate = ({
               </div>
               <script src="https://player.vimeo.com/api/player.js" />
               <div style={{ marginTop: `3rem` }}>
-                <div className="title-separator">
-                  <h4>Klient</h4>
-                  <b>Someone</b>
-                </div>
+                {client && (
+                  <div className="title-separator">
+                    <h4>Klient</h4>
+                    <b>{client}</b>
+                  </div>
+                )}
 
                 <div className="title-separator">
-                  <h4>Datum</h4>
+                  <h4>Vytvořeno</h4>
                   <b>{date}</b>
                 </div>
 
@@ -92,7 +97,7 @@ export const PortfolioPostTemplate = ({
                 ) : null}
                 {coop && (
                   <div className="title-separator">
-                    <h4>Spolupráce s</h4>
+                    <h4>Spolupráce</h4>
                     <b>{coop}</b>
                   </div>
                 )}
@@ -184,6 +189,7 @@ const PortfolioPost = ({ data }) => {
       url={post.frontmatter.url}
       coop={post.frontmatter.coop}
       title={post.frontmatter.title}
+      client={post.frontmatter.client}
       images={post.frontmatter.images}
       date={post.frontmatter.date}
     />
@@ -206,6 +212,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "DD.MM.YYYY")
         title
+        client
         description
         tags
         coop
