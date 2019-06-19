@@ -69,6 +69,11 @@ export const PortfolioPostTemplate = ({
               </div>
               <script src="https://player.vimeo.com/api/player.js" />
               <div style={{ marginTop: `3rem` }}>
+                <div className="title-separator">
+                  <h4>Klient</h4>
+                  <b>Someone</b>
+                </div>
+
                 {coop && (
                   <div className="title-separator">
                     <h4>Spolupráce s</h4>

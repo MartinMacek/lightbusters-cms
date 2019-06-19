@@ -113,15 +113,9 @@ body
 .margin-top-0
   margin-top: 0 !important
 
-.navbar-item 
-  background-color: transparent !important
-  color: lightgray !important  
-  font-size: larger
-  background-image: -moz-none
-  background-image: -webkit-none
-  background-image: -webkit-none
-  background-image: -o-none
-  background-image:none
+.navbar-item   
+  color: lightgray  
+  font-size: larger  
 
 .navbar-item:hover
   @include gradient
@@ -229,6 +223,15 @@ footer.footer
   padding: 0
   //transition: all .2s ease-in-out
   overflow: hidden 
+  padding-bottom: 60%
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  -webkit-transition: all .5s
+  -moz-transition: all .5s
+  -o-transition: all .5s
+  transition: all .5s
+  border-radius: 20px
 
 
 .title-separator
@@ -238,6 +241,7 @@ footer.footer
   position: relative
   overflow: hidden 
   //padding: 13px
+  padding: 10px
 .content h4
   color: #555555
 

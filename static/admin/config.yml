@@ -29,6 +29,7 @@ collections:
           name: "url",
           widget: "string",
         }
+      - { label: "Klient", name: "client", widget: "string" }
       - {
           label: Images,
           name: images,

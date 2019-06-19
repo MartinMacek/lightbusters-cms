@@ -16,13 +16,23 @@ class PortfolioRoll extends React.Component {
             <div key={post.id} className="tile-container tile-item">
               <AniLink fade duration={1} to={post.fields.slug}>
                 {post.frontmatter.featuredimage ? (
-                  <div className="tile-thumbnail featured-thumbnail">
-                    <PreviewCompatibleImage
-                      imageInfo={{
-                        image: post.frontmatter.featuredimage,
-                        alt: `featured image thumbnail for post ${post.title}`
-                      }}
-                    />
+                  <div
+                    className="tile-thumbnail featured-thumbnail"
+                    style={{
+                      backgroundImage: `url(${
+                        post.frontmatter.featuredimage.childImageSharp
+                          ? post.frontmatter.featuredimage.childImageSharp.fluid
+                              .src
+                          : post.frontmatter.featuredimage
+                      })`
+                    }}
+                  >
+                    {/*<PreviewCompatibleImage
+                                          imageInfo={{
+                                            image: post.frontmatter.featuredimage,
+                                            alt: `featured image thumbnail for post ${post.title}`
+                                          }}
+                                        />*/}
                   </div>
                 ) : null}
 
