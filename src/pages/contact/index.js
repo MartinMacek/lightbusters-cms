@@ -79,21 +79,7 @@ export default class Index extends React.Component {
                   <b className="contact-header">IČ</b>
                   <p>00909581</p>
                 </div>
-                <span
-                  style={{
-                    justifyContent: "space-evenly",
-                    display: "flex",
-                    marginTop: "2rem"
-                  }}
-                >
-                  {/*<a
-                                      title="facebook"
-                                      href="https://www.facebook.com/LightBusters.ol/"
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                    >
-                                      <img src={facebook} alt="Facebook" className="soc-icon" />
-                                    </a>*/}
+                <div className="contact-socs">
                   <a
                     title="instagram"
                     href="https://www.instagram.com/lightbusters/"
@@ -110,7 +96,7 @@ export default class Index extends React.Component {
                   >
                     <img src={vimeo} alt="Vimeo" className="soc-icon" />
                   </a>
-                </span>
+                </div>
               </div>
             </div>
           </div>
