@@ -13,12 +13,14 @@ Repo for Lightbusters headless cms.
 ### Commands
 dev
 > gatsby develop
+
 clean - sometimes needed for sync and rebuild
 > gatsby clean
+
 rebuild after major changes templates/collections structure
 >gatsby build
 
 ### To Do
 
-- finalize gradients in tiles for safari
-- later add clients logos to projet details 
+- [ ] finalize gradients in tiles for safari
+- [ ] later add clients logos to projet details 
