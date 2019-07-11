@@ -1,6 +1,6 @@
 ---
 templateKey: portfolio-post
-title: 'Společně pro děti '
+title: Společně pro děti - Odvaha darovat
 client: Společně pro děti
 description: |
   Jeden ze tří reklamních spotů pro neziskovou organizaci Společně pro děti.
