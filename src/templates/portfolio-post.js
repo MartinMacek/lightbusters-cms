@@ -134,21 +134,23 @@ export const PortfolioPostTemplate = ({
                   images.length &&
                   images.map((galleryImage, key) => (
                     <div key={key}>
-                      <ImageZoom
-                        defaultStyles={{
-                          overlay: { backgroundColor: "#000000" }
-                        }}
-                        image={{
-                          src: galleryImage.image.publicURL,
-                          alt: "small gallery image",
-                          className: "img"
-                        }}
-                        zoomImage={{
-                          src: galleryImage.image.publicURL,
-                          alt: "big gallery image",
-                          style: { backgroundColor: "black" }
-                        }}
-                      />
+                      {galleryImage.image && (
+                        <ImageZoom
+                          defaultStyles={{
+                            overlay: { backgroundColor: "#000000" }
+                          }}
+                          image={{
+                            src: galleryImage.image.publicURL,
+                            alt: "small gallery image",
+                            className: "img"
+                          }}
+                          zoomImage={{
+                            src: galleryImage.image.publicURL,
+                            alt: "big gallery image",
+                            style: { backgroundColor: "black" }
+                          }}
+                        />
+                      )}
                     </div>
                   ))}
               </div>
