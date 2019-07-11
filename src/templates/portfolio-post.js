@@ -221,15 +221,6 @@ export const pageQuery = graphql`
         url
         images {
           image {
-            childImageSharp {
-              fluid(maxWidth: 500, quality: 50) {
-                src
-                srcSet
-                aspectRatio
-                sizes
-                base64
-              }
-            }
             publicURL
           }
           alt
