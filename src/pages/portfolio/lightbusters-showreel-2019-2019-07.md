@@ -10,6 +10,6 @@ tags:
   - show
 url: 'https://vimeo.com/316537032'
 images:
-  - image: /img/logo_2.png
+  - image: /img/dsc08161.jpg
 ---
 
