@@ -17,28 +17,13 @@ module.exports = {
         name: "uploads"
       }
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: "pages"
-      }
-    },
+
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
       }
     },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        path: `${__dirname}/src/img`,
-        name: "images"
-      }
-    },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-transformer-remark",
       options: {
@@ -67,6 +52,23 @@ module.exports = {
         ]
       }
     },
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/img`,
+        name: "images"
+      }
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: "pages"
+      }
+    },
+
     {
       resolve: "gatsby-plugin-netlify-cms",
       options: {

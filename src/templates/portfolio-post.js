@@ -134,7 +134,7 @@ export const PortfolioPostTemplate = ({
                   images.length &&
                   images.map((galleryImage, key) => (
                     <div key={key}>
-                      {galleryImage.image && (
+                      {galleryImage.image.publicURL && (
                         <ImageZoom
                           defaultStyles={{
                             overlay: { backgroundColor: "#000000" }
@@ -219,12 +219,6 @@ export const pageQuery = graphql`
         tags
         coop
         url
-        images {
-          image {
-            publicURL
-          }
-          alt
-        }
       }
     }
   }

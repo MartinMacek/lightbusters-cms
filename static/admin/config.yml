@@ -35,7 +35,15 @@ collections:
           label: Images,
           name: images,
           widget: list,
-          fields: [{ label: Image, name: image, widget: image }],
+          fields:
+            [
+              {
+                label: Image,
+                name: image,
+                widget: image,
+                default: "/img/logo_2.png",
+              },
+            ],
         }
 
   - name: "pages"
