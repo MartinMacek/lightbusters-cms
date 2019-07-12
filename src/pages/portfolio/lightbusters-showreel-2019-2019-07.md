@@ -9,7 +9,6 @@ featuredimage: /img/dsc08161.jpg
 tags:
   - show
 url: 'https://vimeo.com/316537032'
-images:
-  - image: /img/dsc08161.jpg
+images: []
 ---
 
