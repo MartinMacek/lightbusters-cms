@@ -12,14 +12,10 @@ coop: |-
   Gaffer - Jan Faukner 
   Voiceover agency - Jakub Klimeš
   Produkce - Jana Popelková
-cooperation:
-  - Director - Lukáš Vojáček
-  - 'Asistent - Filip Vojáček, Martin Dobeš'
 featuredimage: "/img/snímek-obrazovky-2019-07-11-v\_14.21.34.png"
 tags:
   - Commer
 url: 'https://vimeo.com/347483320'
-images:
-  - image: "/img/snímek-obrazovky-2019-07-11-v\_14.21.34.png"
+images: []
 ---
 
