@@ -60,7 +60,7 @@ export default class Index extends React.Component {
                             </h1>*/}
               <h1
                 style={{ marginBottom: "2rem" }}
-                className="gradient-text is-size-3"
+                className="main-color is-size-3"
               >
                 <b>Lukáš </b>
                 <b>Vojáček</b>

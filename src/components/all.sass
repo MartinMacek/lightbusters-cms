@@ -127,7 +127,8 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
   color: lightgray !important
 
 .navbar-text:hover    
-  @include gradient 
+  /*@include gradient */
+  color: #00F260
   -webkit-transition: all .2s ease
   transition: all .2s ease
 
@@ -259,7 +260,8 @@ footer.footer
     opacity: 0.2
     background-color: white
   .tile-text 
-    @include gradient  
+    /*@include gradient */
+    color: #00F260 
     -webkit-transition: all .2s ease
     transition: all .2s ease
   .tile-thumbnail  
@@ -328,12 +330,8 @@ footer.footer
 .cr a
   color: #ffffff14
 
-.gradient-divider
-  background-image: -webkit-linear-gradient(to top right, #00F260, #0575E6) /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-  background-image:    -moz-linear-gradient(to top right, #00F260, #0575E6) /* For Firefox (3.6 to 15) */
-  background-image:      -o-linear-gradient(to top right, #00F260, #0575E6) /* For old Opera (11.1 to 12.0) */ 
-  background-image:         linear-gradient(to top right, #00F260, #0575E6) /* Standard syntax; must be last */
-
+.gradient-divider 
+  background-color: #00F260 
   width: 100%
   height: 1px
 .contact-header
@@ -444,6 +442,9 @@ footer.footer
   margin-top: 1rem
   a
     margin: 10px
+
+.main-color
+  color: #00F260 !important
 
 
 // responsiveness
