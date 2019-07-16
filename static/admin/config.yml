@@ -22,12 +22,7 @@ collections:
       - { label: "Klient", name: "client", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Publish Date", name: "date", widget: "date" }
-      - {
-          label: Cooperation,
-          name: coop,
-          widget: list,
-          fields: [{ label: "Person", name: "person", widget: "text" }],
-        }
+      - { label: "Cooperation", name: "coop", widget: "text" }
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Tags", name: "tags", widget: "list" }
       - {
@@ -40,15 +35,7 @@ collections:
           label: Images,
           name: images,
           widget: list,
-          fields:
-            [
-              {
-                label: Image,
-                name: image,
-                widget: image,
-                default: "/img/logo_2.png",
-              },
-            ],
+          fields: [{ label: Image, name: image, widget: image }],
         }
 
   - name: "pages"
