@@ -30,7 +30,6 @@ collections:
           name: "url",
           widget: "string",
         }
-
       - {
           label: Images,
           name: images,
