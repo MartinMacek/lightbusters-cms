@@ -16,7 +16,6 @@ featuredimage: "/img/snímek-obrazovky-2019-07-11-v\_14.21.34.png"
 tags:
   - Commer
 url: 'https://vimeo.com/347483320'
-images:
-  - image: "/img/snímek-obrazovky-2019-07-11-v\_14.21.34.png"
+images: []
 ---
 

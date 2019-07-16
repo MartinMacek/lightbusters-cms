@@ -9,7 +9,6 @@ featuredimage: "/img/snímek-obrazovky-2019-07-09-v\_18.12.04.png"
 tags:
   - Social Media Content
 url: 'https://vimeo.com/279331823'
-images:
-  - image: "/img/snímek-obrazovky-2019-07-09-v\_18.12.04.png"
+images: []
 ---
 
