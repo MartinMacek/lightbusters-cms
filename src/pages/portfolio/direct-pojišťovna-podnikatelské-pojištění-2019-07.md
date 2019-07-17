@@ -1,6 +1,6 @@
 ---
 templateKey: portfolio-post
-title: Direct - Podnikatelské pojištění
+title: Direct - Pojištění SME
 client: Direct pojišťovna
 description: >-
   Jeden ze tří spotů pro zvýšení povědomí o podnikatelském pojištění od
