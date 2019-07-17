@@ -1,7 +1,7 @@
 ---
 templateKey: portfolio-post
 title: Direct - Podnikatelské pojištění
-client: Direct pojišťovna a.s.
+client: Direct pojišťovna
 description: >-
   Jeden ze tří spotů pro zvýšení povědomí o podnikatelském pojištění od
   pojišťovny Direct.
