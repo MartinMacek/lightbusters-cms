@@ -5,7 +5,7 @@ client: LightBusters
 description: 'Sestřih toho nejlepšího pro rok 2019. '
 date: 2019-02-11T10:47:43.719Z
 coop: Director - Lukáš Vojáček
-featuredimage: /img/dsc08161.jpg
+featuredimage: /img/22.jpg
 tags:
   - Showreel
 url: 'https://vimeo.com/316537032'
