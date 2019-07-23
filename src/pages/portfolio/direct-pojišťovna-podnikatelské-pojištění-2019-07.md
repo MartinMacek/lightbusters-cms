@@ -9,7 +9,7 @@ date: 2018-05-30T12:17:46.534Z
 coop: >-
   Director - Lukáš Vojáček;  Asistenti - Filip Vojáček a Martin Dobeš;  Gaffer -
   Jan Faukner;  Voiceover agency - Jakub Klimeš;  Produkce - Jana Popelková
-featuredimage: /img/13.jpg
+featuredimage: /img/20.jpg
 tags:
   - Commercial
 url: 'https://vimeo.com/272540718'
