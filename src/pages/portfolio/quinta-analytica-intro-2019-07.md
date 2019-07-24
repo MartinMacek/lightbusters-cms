@@ -1,6 +1,6 @@
 ---
 templateKey: portfolio-post
-title: Quinta Analytica - intro
+title: Quinta Analytica - Intro
 client: Quinta Analytica
 description: Průřez firmou
 date: 2019-07-24T10:39:15.229Z
