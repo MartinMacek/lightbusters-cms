@@ -2,12 +2,12 @@
 templateKey: portfolio-post
 title: Quinta Analytica - Intro
 client: Quinta Analytica
-description: Průřez firmou
+description: Firemní video pro farmaceutickou společnost Quinta Analytica.
 date: 2019-07-24T10:39:15.229Z
 coop: >-
-  Director, edit: Vojáček Lukáš,  DOP: Lukáš Vojáček,  Production: Jana
-  Popelková,  Gaffer: Hexar.cz,  Runner: Marek Sainer,  Technique: Filmcrew.cz, 
-  Music: Oli Fillner,  Copywriter: Kateřina Koňaříková,  Voiceover: invoice, 
+  Director, edit: Vojáček Lukáš;  DOP: Lukáš Vojáček;  Production: Jana
+  Popelková;  Gaffer: Hexar.cz;  Runner: Marek Sainer;  Technique: Filmcrew.cz; 
+  Music: Oli Fillner;  Copywriter: Kateřina Koňaříková;  Voiceover: invoice; 
   Drone operator: Martin Nejedlý
 featuredimage: "/img/snímek-obrazovky-2019-07-24-v\_12.47.43-2-.jpg"
 tags:
