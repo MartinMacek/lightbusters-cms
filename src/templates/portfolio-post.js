@@ -129,7 +129,7 @@ export const PortfolioPostTemplate = ({
               </div>
               <script src="https://player.vimeo.com/api/player.js" />
 
-              <div className="mobile-galery" style={{ marginBottom: "3rem" }}>
+              <div className="mobile-galery" style={{ marginBottom: "3rem", color: "black"}}>
                 {images &&
                   images.length &&
                   images.map((galleryImage, key) => (
@@ -219,6 +219,11 @@ export const pageQuery = graphql`
         tags
         coop
         url
+        images {
+          image {
+            publicURL
+          }
+        }
       }
     }
   }
