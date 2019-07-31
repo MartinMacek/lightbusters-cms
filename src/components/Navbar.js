@@ -45,7 +45,7 @@ const Navbar = class extends React.Component {
           <div className="navbar-brand">
             {!this.props.no_logo && (
               <AniLink
-                to="/"
+                to="/portfolio"
                 className="navbar-item"
                 title="Logo"
                 fade
