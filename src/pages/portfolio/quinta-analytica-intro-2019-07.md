@@ -12,7 +12,7 @@ description: >-
   rychleji vstoupit na trh a okamžitě pomoci pacientům po celém světě. Našim
   úkolem bylo Quintu představit a ukázat, co všechno se za takovým procesem
   zpracování léčiv skrývá. Tak pokud byste měli chvilku, koukněte. Nikdy totiž
-  nevíte, kdy může takový lék jednou pomoct i vám.
+  nevíte, kdy může takový lék pomoct i vám.
 date: 2019-07-24T10:39:15.229Z
 coop: >-
   Director, edit: Vojáček Lukáš;  DOP: Lukáš Vojáček;  Production: Jana
