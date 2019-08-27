@@ -2,7 +2,17 @@
 templateKey: portfolio-post
 title: Quinta Analytica - Intro
 client: Quinta Analytica
-description: Firemní video pro farmaceutickou společnost Quinta Analytica.
+description: >-
+  Naše společnost čelí velkým výzvám a nejinak je tomu i v oblasti medicíny. Na
+  mnoho nemocí se už medicíně podařilo najít odpovědi, přesto je stále spousta
+  těch, u kterých je pořád hledá. Navíc vlivem klimatických a populačních změn
+  dochází ke vzniku dalších nových onemocnění, na které je také potřeba co
+  nejrychleji hledat řešení. A právě této výzvě se staví Quinta Analytica -
+  společnost, která pomáhá při výrobě, vývoji a testování léčiv, která pak mohou
+  rychleji vstoupit na trh a okamžitě pomoci pacientům po celém světě. Našim
+  úkolem bylo Quintu představit a ukázat, co všechno se za takovým procesem
+  zpracování léčiv skrývá. Tak pokud byste měli chvilku, koukněte. Nikdy totiž
+  nevíte, kdy může takový lék jednou pomoct i vám.
 date: 2019-07-24T10:39:15.229Z
 coop: >-
   Director, edit: Vojáček Lukáš;  DOP: Lukáš Vojáček;  Production: Jana
