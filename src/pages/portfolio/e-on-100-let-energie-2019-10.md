@@ -7,7 +7,7 @@ description: >-
   energetického zákona.
 date: 2019-09-09T11:09:17.655Z
 coop: Director - Lukáš Vojáček
-featuredimage: "/img/snímek-obrazovky-2019-10-09-v\_13.12.41.png"
+featuredimage: /img/eonlet.png
 tags:
   - SocialMedia
 url: 'https://vimeo.com/358125845'
