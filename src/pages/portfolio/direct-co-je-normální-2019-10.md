@@ -5,7 +5,7 @@ client: Direct pojišťovna
 description: Reklama pro Direct pojišťovnu.
 date: 2018-11-11T11:10:11.016Z
 coop: Director - Lukáš Vojáček
-featuredimage: "/img/snímek-obrazovky-2019-10-11-v\_12.24.39.png"
+featuredimage: /img/normalni.png
 tags:
   - Commercial
 url: 'https://vimeo.com/296877306'
