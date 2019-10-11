@@ -3,14 +3,14 @@ templateKey: portfolio-post
 title: Společně pro děti - Odvaha darovat
 client: Společně pro děti
 description: >-
-  Třetí ze série spotů pro kampaň Odvaha darovat od neziskové organizace
+  Další ze série spotů pro kampaň Odvaha darovat od neziskové organizace
   Společně pro děti.
-date: 2019-07-10T12:08:09.654Z
+date: 2019-10-03T12:14:13.815Z
 coop: Director - Lukáš Vojáček
-featuredimage: "/img/snímek-obrazovky-2019-10-09-v\_13.31.47.png"
+featuredimage: "/img/snímek-obrazovky-2019-10-11-v\_11.43.24.png"
 tags:
   - Commercial
-url: 'https://vimeo.com/347483358'
+url: 'https://vimeo.com/347483543'
 images: []
 ---
 
