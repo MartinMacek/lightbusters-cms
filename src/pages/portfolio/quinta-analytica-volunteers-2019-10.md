@@ -7,7 +7,7 @@ description: >-
   Analytica.
 date: 2018-10-20T08:41:01.052Z
 coop: Director - Lukáš Vojáček
-featuredimage: "/img/snímek-obrazovky-2019-10-11-v\_11.18.04.png"
+featuredimage: /img/dobrovolnik.png
 tags:
   - CorporateVideo
 url: 'https://vimeo.com/289336696'
