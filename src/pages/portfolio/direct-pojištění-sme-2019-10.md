@@ -9,9 +9,9 @@ description: >-
   krejčí Leo Macenauer. Leo je už třetím pokračovatelem rodinného řemesla a ve
   své práci dbá na perfektní znalost svého klienta. Věci jdou pak totiž rychle a
   jednoduše, a tak to má rád i v běžném životě - třeba když si musí řešit své
-  podnikatelské pojištění on. Proto se Leo rozhodl podpořit novou kampaň Directu
-  a zapojil se do jednoho ze tří spotů. Protože když děláte co vás baví, je
-  dobré si to pojistit.
+  podnikatelské pojištění on. Proto se Leo rozhodl podpořit novou kampaň
+  pojišťovny Direct a zapojil se do jednoho ze tří spotů. Protože když děláte co
+  vás baví, je dobré si to pojistit.
 date: 2018-10-15T11:00:17.193Z
 coop: Director - Lukáš Vojáček
 featuredimage: /img/leomac.png
