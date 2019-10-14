@@ -16,7 +16,7 @@ description: >-
   nejlepšího, ať se s váma o ten uplynulý rok taky trochu podělíme.
 date: 2019-02-11T10:47:43.719Z
 coop: Director - Lukáš Vojáček
-featuredimage: /img/lightb.png
+featuredimage: /img/light.png
 tags:
   - Showreel
 url: 'https://vimeo.com/316537032'
