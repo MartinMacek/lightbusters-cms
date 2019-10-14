@@ -16,7 +16,7 @@ description: >-
 date: 2019-07-11T10:35:18.800Z
 coop: |
   Director - Lukáš Vojáček
-featuredimage: /img/p1144728.00_00_10_38.still004.jpg
+featuredimage: /img/darovat.png
 tags:
   - Commercial
 url: 'https://vimeo.com/347483320'
