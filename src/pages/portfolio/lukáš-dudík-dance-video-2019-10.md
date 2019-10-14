@@ -2,7 +2,13 @@
 templateKey: portfolio-post
 title: Lukáš Dudík - Dance Video
 client: Lukáš Dudík
-description: Taneční video pro Lukáše Dudíka.
+description: >-
+  Lockin, poppin a Lukes Dudík - tak to je něco pro nás. S Lukášem se známe už
+  dlouho a jako milovníci hudby a tance nikdy neodmítnem možnost s ním něco
+  natočit. Tentokrát jsme se potkali v noci na parkovišti a Lukes to tam opět
+  vystřihl jak ze žurnálu. Do rytmu nám udeřil Dang! od Mac Millera a vznikl
+  tenhle krátkej taneční showreel. Tak co vy na něj? No nejde mu to od
+  ruky(nohy)?
 date: 2019-01-11T10:59:34.161Z
 coop: Director - Lukáš Vojáček
 featuredimage: /img/dudajs.png
