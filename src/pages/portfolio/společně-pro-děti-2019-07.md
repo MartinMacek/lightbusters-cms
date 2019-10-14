@@ -16,7 +16,7 @@ description: >-
 date: 2019-07-11T10:35:18.800Z
 coop: |
   Director - Lukáš Vojáček
-featuredimage: /img/odvaha.png
+featuredimage: /img/odv.png
 tags:
   - Commercial
 url: 'https://vimeo.com/347483320'
