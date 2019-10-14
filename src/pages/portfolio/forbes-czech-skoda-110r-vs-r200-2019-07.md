@@ -12,7 +12,7 @@ description: >-
   Severky, a nebo se prostě jen podívejte na naše video.
 date: 2018-07-10T09:01:03.866Z
 coop: Director - Lukáš Vojáček
-featuredimage: /img/21.jpg
+featuredimage: /img/forbes.png
 tags:
   - SocialMedia
 url: 'https://vimeo.com/279331823'
