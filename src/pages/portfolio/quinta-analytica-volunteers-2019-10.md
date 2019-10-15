@@ -2,9 +2,16 @@
 templateKey: portfolio-post
 title: Quinta Analytica - Volunteers
 client: Quinta Analytica
-description: >-
-  Video pro náborovou kampaň dobrovolníku farmaceutické společnosti Quinta
-  Analytica.
+description: >+
+  Na světě je stále spousta nemocí, na které zatím medicína nezná odpovědi.
+  Proces vývoje a testování nových léčiv je tak nezbytnou součástí v cestě za
+  jejich nalezením. Jednou ze společností, která řešení konstatně hledá, je i
+  Quinta Analytica. Při svém hledání se však neobejde bez dobrovolníků, kteří
+  jsou ochotni s nalezením a ověřeným účinných látek pomoct. Proto se Quinta ve
+  spolupráci s námi rozhodla natočit tento krátký spot, aby jím poděkovala
+  současným dobrovolníkům a vyzvala ke spolupráci i další. Právě díky nim totiž
+  mohou životně důležité léky rychleji vstoupit na trh. Děkujeme.
+
 date: 2018-10-20T08:41:01.052Z
 coop: Director - Lukáš Vojáček
 featuredimage: /img/dobrovolnik.png
