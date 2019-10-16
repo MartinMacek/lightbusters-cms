@@ -19,7 +19,7 @@ coop: >-
   Popelková;  Gaffer: Hexar.cz;  Runner: Marek Sainer;  Technique: Filmcrew.cz; 
   Music: Oli Fillner;  Copywriter: Kateřina Koňaříková;  Voiceover: invoice; 
   Drone operator: Martin Nejedlý
-featuredimage: "/img/snímek-obrazovky-2019-07-24-v\_12.47.43-2-.jpg"
+featuredimage: /img/quintic.png
 tags:
   - CorporateVideo
 url: 'https://vimeo.com/310336829'
