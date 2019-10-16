@@ -14,7 +14,7 @@ description: >-
   nechcete věštit z křišťálové koule sami, nechte si vyložit karty od nich.
 date: 2019-09-09T11:09:17.655Z
 coop: Director - Lukáš Vojáček
-featuredimage: /img/eones.png
+featuredimage: /img/eonator.png
 tags:
   - SocialMedia
 url: 'https://vimeo.com/358125845'
