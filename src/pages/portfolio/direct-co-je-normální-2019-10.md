@@ -10,7 +10,7 @@ description: >-
   spot. V něm jsme vyzpovídali několik z vás, abychom zjistili, co dalšího
   považujete za normální? No a někdy to fakt stálo za to. Třeba když si svoji
   miniroli o berlích střihnul i náš režisér. Tak si to dejte až do konce, ať už
-  nemusíte pochybovat o tom, co je a není normální.
+  o tom, co je a není normální, nemusíte nikdy pochybovat.
 date: 2018-11-11T11:10:11.016Z
 coop: Director - Lukáš Vojáček
 featuredimage: /img/normalni.png
