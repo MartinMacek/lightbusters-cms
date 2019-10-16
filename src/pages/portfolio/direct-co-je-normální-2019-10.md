@@ -2,7 +2,15 @@
 templateKey: portfolio-post
 title: Direct - Co je normální?
 client: Direct pojišťovna
-description: Reklama na novou kampaň Co je normální? od pojišťovny Direct.
+description: >-
+  Direct má ambici měnit české pojišťovnictví, odstraňovat háčky, nic neskrývat,
+  být ke svým klientům fér, ale hlavně chovat se lidsky. Asi byste to dnes
+  považovali za normální, ale přesto to tak není. Proto Direct přichází se svojí
+  novou kampaní - Konečně normální pojišťovna - ke které jsme natočili krátký
+  spot. V něm jsme vyzpovídali několik z vás, abychom zjistili, co dalšího
+  považujete za normální? No a někdy to fakt stálo za to. Třeba když si svoji
+  miniroli o berlích střihnul i náš režisér. Tak si to dejte až do konce, ať už
+  nemusíte pochybovat o tom, co je a není normální.
 date: 2018-11-11T11:10:11.016Z
 coop: Director - Lukáš Vojáček
 featuredimage: /img/normalni.png
