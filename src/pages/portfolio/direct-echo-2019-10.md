@@ -10,7 +10,7 @@ description: >-
   fakt nic neztratilo. Ani kameraman, ani kamera, a tak jsme mohli dát dohromady
   tenhle krátkej spot, aby jste už jednou provždy měli klid i vy.
 date: 2019-08-09T10:47:48.598Z
-coop: Director - Lukáš Vojáček
+coop: Director - Lukáš Vojáček; Asistent - Filip Vojáček
 featuredimage: /img/direct.png
 tags:
   - Commercial
