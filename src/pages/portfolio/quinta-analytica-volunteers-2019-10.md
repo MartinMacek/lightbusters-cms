@@ -13,7 +13,11 @@ description: >+
   mohou životně důležité léky rychleji vstoupit na trh. Děkujeme.
 
 date: 2018-10-20T08:41:01.052Z
-coop: Director - Lukáš Vojáček
+coop: >-
+  Director, editor - Lukáš Vojáček; Herečka - Nela Friebová; Produkce - Jana
+  Popelková; Gaffer - Hexar.cz; Runner - Marek Sainer; Technika - Filmcrew.cz;
+  Hudba - Oli Fillner; Copywriter - Kateřina Koňaříková; Voiceover - invoice;
+  Drone operator - Martin Nejedlý
 featuredimage: /img/dobrovolnik.png
 tags:
   - CorporateVideo
