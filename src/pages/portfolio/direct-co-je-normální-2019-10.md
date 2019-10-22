@@ -12,7 +12,9 @@ description: >-
   miniroli o berlích střihnul i náš režisér. Tak si to dejte až do konce, ať už
   o tom, co je a není normální, nemusíte nikdy pochybovat.
 date: 2018-11-11T11:10:11.016Z
-coop: Director - Lukáš Vojáček
+coop: >-
+  Director - Lukáš Vojáček; Kamera - Jonáš Eder; Asistent - Filip Vojáček; Zvuk
+  - Rikki Beran
 featuredimage: /img/normalni.png
 tags:
   - Commercial
