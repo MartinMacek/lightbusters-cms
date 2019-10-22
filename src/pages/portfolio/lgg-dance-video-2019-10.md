@@ -10,7 +10,9 @@ description: >-
   krátkej taneční showreel. Holky to na nás vybalily ve velkým, tělocvična málem
   spadla a my se docela slušně zapotili. Ale upřímně, nezapotili byste se taky?
 date: 2018-10-15T08:31:03.603Z
-coop: Director - Lukáš Vojáček
+coop: >-
+  Director - Lukáš Vojáček; Asistent - Marek Sainer; Art Director - Ladislav
+  Václavec
 featuredimage: /img/lokales.png
 tags:
   - MusicVideo
