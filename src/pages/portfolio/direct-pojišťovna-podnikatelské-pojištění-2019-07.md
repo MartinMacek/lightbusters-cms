@@ -15,8 +15,8 @@ description: >-
   je dobré si to pojistit.
 date: 2018-05-30T12:17:46.534Z
 coop: >-
-  Director - Lukáš Vojáček;  Asistenti - Filip Vojáček a Martin Dobeš;  Gaffer -
-  Jan Faukner;  Voiceover agency - Jakub Klimeš;  Produkce - Jana Popelková
+  Director - Lukáš Vojáček;  Asistenti - Filip Vojáček a Martin Dobeš; Voiceover
+  - Jaroslav Kuneš;  Produkce - Jana Popelková
 featuredimage: /img/tupy.png
 tags:
   - Commercial
