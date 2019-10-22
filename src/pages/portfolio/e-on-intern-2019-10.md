@@ -11,7 +11,7 @@ description: >-
   videí pro svoji firemní komunikační platformu a my máme radost, že je můžeme
   vytvářet a být u toho.
 date: 2019-09-11T09:31:06.808Z
-coop: Director - Lukáš Vojáček
+coop: Director - Lukáš Vojáček; DOP - David Malý
 featuredimage: /img/eon.png
 tags:
   - InternalVideo
