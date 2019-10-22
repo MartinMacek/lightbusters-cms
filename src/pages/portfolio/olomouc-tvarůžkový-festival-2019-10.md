@@ -10,7 +10,9 @@ description: >-
   sice za námi, ale na náměstí to "voní" doteď. Však doražte a uvidíte. Ee teda
   ucítíte.
 date: 2019-06-11T11:45:29.412Z
-coop: Director - Lukáš Vojáček
+coop: >-
+  Director - Lukáš Vojáček; Herci - Barbora Šebestíková; Produkce - Lukáš Hodis;
+  Asistent - Dan Tyrlík
 featuredimage: "/img/snímek-obrazovky-2019-10-11-v\_13.48.09.png"
 tags:
   - Commercial
