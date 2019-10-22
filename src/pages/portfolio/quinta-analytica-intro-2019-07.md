@@ -14,7 +14,7 @@ description: >-
   zpracování léčiv skrývá. Tak pokud byste měli chvilku, koukněte. Nikdy totiž
   nevíte, kdy může takový lék pomoct třeba i vám.
 date: 2019-07-24T10:39:15.229Z
-coop: "Director &\_Editor - Vojáček Lukáš; DOP - Lukáš Vojáček; Production - Jana Popelková; Gaffer - Hexar.cz; Runner - Marek Sainer; Technique - Filmcrew.cz; Music - Oli Fillner; Copywriter - Kateřina Koňaříková; Voiceover - invoice; Drone operator - Martin Nejedlý"
+coop: "Director,\_Editor - Vojáček Lukáš; Produkce - Jana Popelková; Gaffer - Hexar.cz; Runner - Marek Sainer; Technika - Filmcrew.cz; Hudba - Oli Fillner; Copywriter - Kateřina Koňaříková; Voiceover - invoice; Drone operator - Martin Nejedlý"
 featuredimage: /img/quintic.png
 tags:
   - CorporateVideo
