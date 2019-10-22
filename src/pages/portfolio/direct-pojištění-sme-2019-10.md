@@ -13,7 +13,9 @@ description: >-
   pojišťovny Direct a zapojil se do jednoho ze tří spotů. Protože když děláte co
   vás baví, je dobré si to pojistit.
 date: 2018-10-15T11:00:17.193Z
-coop: Director - Lukáš Vojáček
+coop: >-
+  Director - Lukáš Vojáček; Asistenti - Filip Vojáček a Martin Dobeš; Gaffer -
+  Jan Faukner; Voiceover agency - Jakub Klimeš; Produkce - Jana Popelková
 featuredimage: /img/leomac.png
 tags:
   - Commercial
