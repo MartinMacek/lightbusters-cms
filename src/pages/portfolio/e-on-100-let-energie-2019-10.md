@@ -13,7 +13,7 @@ description: >-
   budoucnosti energií a o tom, co nás v dalších 100 letech čeká. Tak pokud
   nechcete věštit z křišťálové koule sami, nechte si vyložit karty od nich.
 date: 2019-09-09T11:09:17.655Z
-coop: Director - Lukáš Vojáček
+coop: Director - Lukáš Vojáček; Zvuk - Adam Lašek; Produkce - Lukáš Hodis
 featuredimage: /img/eonator.png
 tags:
   - SocialMedia
