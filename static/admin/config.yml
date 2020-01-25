@@ -36,6 +36,16 @@ collections:
           widget: list,
           fields: [{ label: Image, name: image, widget: image }],
         }
+      - {
+          label: "Order",
+          name: "order",
+          widget: "number",
+          default: 0,
+          valueType: "int",
+          min: 0,
+          max: 1000,
+          step: 1,
+        }
 
   - name: "pages"
     label: "Pages"

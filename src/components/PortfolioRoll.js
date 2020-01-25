@@ -73,7 +73,10 @@ export default () => (
     query={graphql`
       query PortfolioRollQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
+          sort: {
+            order: DESC
+            fields: [frontmatter___date, frontmatter___order]
+          }
           filter: { frontmatter: { templateKey: { eq: "portfolio-post" } } }
         ) {
           edges {
