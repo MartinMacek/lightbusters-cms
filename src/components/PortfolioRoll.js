@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { graphql, StaticQuery } from "gatsby";
+import React from "react"
+import PropTypes from "prop-types"
+import { graphql, StaticQuery } from "gatsby"
 //import PreviewCompatibleImage from "./PreviewCompatibleImage";
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 class PortfolioRoll extends React.Component {
   render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
+    const { data } = this.props
+    const { edges: posts } = data.allMarkdownRemark
 
     return (
       <div className="portfolioposts">
@@ -24,7 +24,7 @@ class PortfolioRoll extends React.Component {
                           ? post.frontmatter.featuredimage.childImageSharp.fluid
                               .src
                           : post.frontmatter.featuredimage
-                      })`
+                      })`,
                     }}
                   >
                     {/*<PreviewCompatibleImage
@@ -36,16 +36,15 @@ class PortfolioRoll extends React.Component {
                   </div>
                 ) : null}
 
-                <div className="center">
-                  <h3 style={{ padding: "2px", "text-align": "center" }}>
+                <div className="portfolio-title">
+                  <h3 style={{ padding: "2px 0" }}>
                     <b className="tile-text">{post.frontmatter.title}</b>
                   </h3>
 
                   <p
                     style={{
-                      textAlign: "center",
                       fontWeight: "bold",
-                      color: "lightgray"
+                      color: "lightgray",
                     }}
                   >
                     {post.frontmatter.tags.map((tag, key) => (
@@ -57,17 +56,17 @@ class PortfolioRoll extends React.Component {
             </div>
           ))}
       </div>
-    );
+    )
   }
 }
 
 PortfolioRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.array
-    })
-  })
-};
+      edges: PropTypes.array,
+    }),
+  }),
+}
 
 export default () => (
   <StaticQuery
@@ -104,4 +103,4 @@ export default () => (
     `}
     render={(data, count) => <PortfolioRoll data={data} count={count} />}
   />
-);
+)
