@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 // import { kebabCase } from "lodash";
 import Helmet from "react-helmet"
@@ -25,6 +25,10 @@ export const PortfolioPostTemplate = ({
   date,
   helmet,
 }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const PostContent = contentComponent || Content
 
   const video_id = url.replace("https://vimeo.com/", "")
@@ -140,7 +144,9 @@ export const PortfolioPostTemplate = ({
                         <h4>Spolupráce</h4>
                         <b>
                           {coopItems.map((coopItem, key) => (
-                            <span key={key}>{coopItem} </span>
+                            <span key={key}>
+                              {coopItem} <br />
+                            </span>
                           ))}
                         </b>
                       </div>
