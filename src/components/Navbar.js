@@ -45,13 +45,13 @@ const Navbar = class extends React.Component {
           <div className="navbar-brand">
             {!this.props.no_logo && (
               <AniLink
-                to="/portfolio"
+                to="/"
                 className="navbar-item"
                 title="Logo"
                 fade
                 duration={1}
               >
-                <img src={logo} alt="Kaldi" style={{ width: "145px" }} />
+                <img src={logo} alt="LightBusters" style={{ width: "145px" }} />
               </AniLink>
             )}
 
