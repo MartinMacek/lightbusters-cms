@@ -10,7 +10,7 @@ collections:
     label: "Portfolio"
     folder: "src/pages/portfolio"
     create: true
-    slug: "{{slug}}-{{year}}-{{month}}"
+    slug: "{{slug}}-{{year}}-{{month}}-{{day}}"
     fields:
       - {
           label: "Template Key",

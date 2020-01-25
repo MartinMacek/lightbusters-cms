@@ -50,7 +50,6 @@ export const PortfolioPostTemplate = ({
                 <b className="main-color">{title}</b>
               </h1>
               <div
-                className="desktop-vid"
                 style={{
                   padding: "56.25% 0 0 0",
                   position: "relative",
