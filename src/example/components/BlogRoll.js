@@ -1,7 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from './PreviewCompatibleImage'
+import React from "react"
+import PropTypes from "prop-types"
+import { Link, graphql, StaticQuery } from "gatsby"
+import PreviewCompatibleImage from "../../components/PreviewCompatibleImage"
 
 class BlogRoll extends React.Component {
   render() {
@@ -15,7 +15,7 @@ class BlogRoll extends React.Component {
             <div className="is-parent column is-6" key={post.id}>
               <article
                 className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
+                  post.frontmatter.featuredpost ? "is-featured" : ""
                 }`}
               >
                 <header>
@@ -87,7 +87,6 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
-                featuredpost
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 120, quality: 100) {
@@ -101,6 +100,7 @@ export default () => (
         }
       }
     `}
+    // removed featuredpost from frontmatter
     render={(data, count) => <BlogRoll data={data} count={count} />}
   />
 )

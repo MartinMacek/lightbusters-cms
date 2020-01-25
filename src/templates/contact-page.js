@@ -1,10 +1,10 @@
-import React from "react";
-import Navbar from "../../components/Navbar";
-import Layout from "../../components/Layout";
+import React from "react"
+import Navbar from "../components/Navbar"
+import Layout from "../components/Layout"
 //import facebook from "../../img/social/facebook.svg";
-import instagram from "../../img/social/instagram.svg";
-import vimeo from "../../img/social/vimeo.svg";
-import ribbon from "../../img/ribbon.png";
+import instagram from "../img/social/instagram.svg"
+import vimeo from "../img/social/vimeo.svg"
+import ribbon from "../img/ribbon.png"
 
 export default class Index extends React.Component {
   render() {
@@ -26,7 +26,7 @@ export default class Index extends React.Component {
                 position: "relative",
                 height: "15px",
                 top: "2px",
-                filter: "invert(100%)"
+                filter: "invert(100%)",
               }}
             />{" "}
             Instagram
@@ -46,7 +46,7 @@ export default class Index extends React.Component {
                 height: "15px",
                 top: "2px",
                 position: "relative",
-                filter: "invert(100%)"
+                filter: "invert(100%)",
               }}
             />{" "}
             Vimeo
@@ -102,6 +102,6 @@ export default class Index extends React.Component {
           </div>
         </span>
       </Layout>
-    );
+    )
   }
 }

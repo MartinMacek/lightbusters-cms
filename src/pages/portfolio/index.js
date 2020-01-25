@@ -1,7 +1,7 @@
-import React from "react";
-import PortfolioRoll from "../../components/PortfolioRoll";
-import Navbar from "../../components/Navbar";
-import Layout from "../../components/Layout";
+import React from "react"
+import PortfolioRoll from "../../components/PortfolioRoll"
+import Navbar from "../../components/Navbar"
+import Layout from "../../components/Layout"
 
 export default class BlogIndexPage extends React.Component {
   render() {
@@ -17,8 +17,10 @@ export default class BlogIndexPage extends React.Component {
                     pomáháme zlepšovat efektivitu prodeje a úspěšnosti reklam.
                   </p>
                 </div>*/}
-        <PortfolioRoll />
+        <div className="container">
+          <PortfolioRoll />
+        </div>
       </Layout>
-    );
+    )
   }
 }
