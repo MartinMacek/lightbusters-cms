@@ -123,7 +123,7 @@ export const PortfolioPostTemplate = ({
 
                     <div className="title-separator">
                       <h4>Vytvořeno</h4>
-                      <b>{date}</b>
+                      <b>{date.getDate ? date.toLocaleDateString() : date}</b>
                     </div>
 
                     {tags && tags.length ? (

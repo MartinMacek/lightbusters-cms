@@ -5,8 +5,6 @@ import { PortfolioPostTemplate } from "../../templates/portfolio-post"
 const PortfolioPostPreview = ({ entry, getAsset }) => {
   const data = entry.getIn(["data"]).toJS()
 
-  console.log(data)
-
   if (data) {
     return <PortfolioPostTemplate {...data} />
   } else {
