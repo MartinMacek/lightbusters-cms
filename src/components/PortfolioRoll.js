@@ -74,8 +74,8 @@ export default () => (
       query PortfolioRollQuery {
         allMarkdownRemark(
           sort: {
-            order: DESC
-            fields: [frontmatter___date, frontmatter___order]
+            order: [DESC, DESC]
+            fields: [frontmatter___order, frontmatter___date]
           }
           filter: { frontmatter: { templateKey: { eq: "portfolio-post" } } }
         ) {

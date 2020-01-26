@@ -47,7 +47,7 @@ const Navbar = class extends React.Component {
               <AniLink
                 to="/"
                 className="navbar-item"
-                title="Logo"
+                title="LightBusters"
                 fade
                 duration={1}
               >
