@@ -31,7 +31,7 @@ export const PortfolioPostTemplate = ({
 
   const PostContent = contentComponent || Content
 
-  const video_id = url.replace("https://vimeo.com/", "")
+  const videoId = url.replace("https://vimeo.com/", "")
   const coopItems = coop != null ? coop.split(";") : []
 
   return (
@@ -57,7 +57,7 @@ export const PortfolioPostTemplate = ({
                 }}
               >
                 <iframe
-                  src={"https://player.vimeo.com/video/" + video_id}
+                  src={"https://player.vimeo.com/video/" + videoId}
                   title="video"
                   style={{
                     position: "absolute",
@@ -167,6 +167,12 @@ PortfolioPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  tags: PropTypes.array,
+  url: PropTypes.string,
+  date: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Date)]),
+  images: PropTypes.array,
+  coop: PropTypes.string,
+  client: PropTypes.string,
 }
 
 const PortfolioPost = ({ data }) => {

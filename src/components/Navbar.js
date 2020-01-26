@@ -22,13 +22,15 @@ const Navbar = class extends React.Component {
       // after state has been updated,
       () => {
         // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: "is-active",
-            })
-          : this.setState({
-              navBarActiveClass: "",
-            })
+        if (this.state.active) {
+          this.setState({
+            navBarActiveClass: "is-active",
+          })
+        } else {
+          this.setState({
+            navBarActiveClass: "",
+          })
+        }
       }
     )
   }
@@ -43,17 +45,15 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            {!this.props.no_logo && (
-              <AniLink
-                to="/"
-                className="navbar-item"
-                title="LightBusters"
-                fade
-                duration={1}
-              >
-                <img src={logo} alt="LightBusters" style={{ width: "145px" }} />
-              </AniLink>
-            )}
+            <AniLink
+              to="/"
+              className="navbar-item"
+              title="LightBusters"
+              fade
+              duration={1}
+            >
+              <img src={logo} alt="LightBusters" style={{ width: "145px" }} />
+            </AniLink>
 
             {/* Hamburger menu */}
             <div

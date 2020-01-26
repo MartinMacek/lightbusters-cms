@@ -37,6 +37,7 @@ export default class Contact extends React.Component {
       }),
     })
       .then(() => navigate(form.getAttribute("action")))
+      // eslint-disable-next-line no-alert
       .catch(error => alert(error))
   }
 

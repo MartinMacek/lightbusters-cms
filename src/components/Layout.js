@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import "./all.sass"
 import useSiteMetadata from "./SiteMetadata"
@@ -51,5 +52,7 @@ const TemplateWrapper = ({ children }) => {
     </div>
   )
 }
+
+TemplateWrapper.propTypes = { children: PropTypes.node.isRequired }
 
 export default TemplateWrapper

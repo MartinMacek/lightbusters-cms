@@ -8,6 +8,7 @@ graphql-schema.json
 .cache/
 build/
 public/
+lambda/
 
 # build folders
 gatsby-*.js,src/**/*.js

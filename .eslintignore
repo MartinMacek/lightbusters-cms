@@ -1,0 +1,5 @@
+# build folders
+.cache/
+build/
+public/
+lambda/
