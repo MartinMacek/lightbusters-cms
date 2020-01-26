@@ -41,7 +41,6 @@ collections:
           name: "order",
           widget: "number",
           default: 0,
-          valueType: "int",
           min: 0,
           max: 1000,
           step: 1,
