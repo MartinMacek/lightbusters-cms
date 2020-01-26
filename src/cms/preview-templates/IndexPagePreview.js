@@ -8,6 +8,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
 
   if (data) {
     return (
+      // TODO: remove when the issues is fixed
       // add internal provider to overcome transition link issue
       // https://github.com/TylerBarnes/gatsby-plugin-transition-link/issues/161
       <InternalProvider>
