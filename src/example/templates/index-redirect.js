@@ -1,6 +1,9 @@
-import React from "react";
+import React from "react"
 const IndexRedirect = () => {
-	return <div>
-  <meta http-equiv="refresh" content="0;url=/portfolio"></meta></div>
-};
+  return (
+    <div>
+      <meta http-equiv="refresh" content="0;url=/portfolio" />
+    </div>
+  )
+}
 export default IndexRedirect

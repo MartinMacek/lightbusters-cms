@@ -1,0 +1,13 @@
+# .prettierignore
+package.json
+package-lock.json
+yarn.lock
+graphql-schema.json
+
+# build folders
+.cache/
+build/
+public/
+
+# build folders
+gatsby-*.js,src/**/*.js

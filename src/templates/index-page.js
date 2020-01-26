@@ -1,12 +1,12 @@
-import React from "react";
+import React from "react"
 // import { Link, } from "gatsby";
-import Navbar from "../components/Navbar";
-import Layout from "../components/Layout";
+import Navbar from "../components/Navbar"
+import Layout from "../components/Layout"
 //import logo from "../img/logo_2.png";
 //import facebook from "../img/social/facebook.svg";
-import instagram from "../img/social/instagram.svg";
-import vimeo from "../img/social/vimeo.svg";
-import ribbon from "../img/ribbon.png";
+import instagram from "../img/social/instagram.svg"
+import vimeo from "../img/social/vimeo.svg"
+import ribbon from "../img/ribbon.png"
 
 export const IndexPageTemplate = () => (
   <Layout>
@@ -45,7 +45,7 @@ export const IndexPageTemplate = () => (
               height: "15px",
               top: "2px",
               position: "relative",
-              filter: "invert(100%)"
+              filter: "invert(100%)",
             }}
           />{" "}
           Vimeo
@@ -65,7 +65,7 @@ export const IndexPageTemplate = () => (
               position: "relative",
               height: "15px",
               top: "2px",
-              filter: "invert(100%)"
+              filter: "invert(100%)",
             }}
           />{" "}
           Instagram
@@ -120,10 +120,10 @@ export const IndexPageTemplate = () => (
             </div>*/}
     </div>
   </Layout>
-);
+)
 
 const IndexPage = () => {
-  return <IndexPageTemplate />;
-};
+  return <IndexPageTemplate />
+}
 
-export default IndexPage;
+export default IndexPage
