@@ -14,11 +14,12 @@ description: >-
 date: 2018-11-11T11:10:11.016Z
 coop: >-
   Director - Lukáš Vojáček; Kamera - Jonáš Eder; Asistent - Filip Vojáček; Zvuk
-  - Rikki Beran
+  - Rikki Beran; Efekty - borec
 featuredimage: /img/normalni.png
 tags:
   - Commercial
-url: "https://vimeo.com/296877306"
+url: 'https://vimeo.com/296877306'
 images: []
 order: 0
 ---
+
