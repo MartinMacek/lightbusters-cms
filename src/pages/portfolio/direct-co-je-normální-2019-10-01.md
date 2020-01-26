@@ -14,7 +14,7 @@ description: >-
 date: 2018-11-11T11:10:11.016Z
 coop: >-
   Director - Lukáš Vojáček; Kamera - Jonáš Eder; Asistent - Filip Vojáček; Zvuk
-  - Rikki Beran; Efekty - borec
+  - Rikki Beran;
 featuredimage: /img/normalni.png
 tags:
   - Commercial
