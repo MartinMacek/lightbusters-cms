@@ -46,7 +46,7 @@ TagsPage.propTypes = {
         title: PropTypes.string.isRequired,
       }),
     }),
-    markdownRemark: PropTypes.object,
+    allMarkdownRemark: PropTypes.object,
   }),
 }
 

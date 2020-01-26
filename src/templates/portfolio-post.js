@@ -9,7 +9,9 @@ import {
 import Layout from "../components/Layout"
 import Navbar from "../components/Navbar"
 import Content, { HTMLContent } from "../components/Content"
-import ImageZoom from "react-medium-image-zoom"
+import Zoom from "react-medium-image-zoom"
+import "react-medium-image-zoom/dist/styles.css"
+
 //import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 export const PortfolioPostTemplate = ({
@@ -68,7 +70,7 @@ export const PortfolioPostTemplate = ({
                   }}
                   frameBorder="0"
                   allow="autoplay; fullscreen"
-                  allowFullScreen
+                  allowFullScreen={true}
                 />
               </div>
               <script src="https://player.vimeo.com/api/player.js" />
@@ -82,21 +84,18 @@ export const PortfolioPostTemplate = ({
                   images.map((galleryImage, key) => (
                     <div key={key}>
                       {galleryImage.image.publicURL && (
-                        <ImageZoom
-                          defaultStyles={{
-                            overlay: { backgroundColor: "#000000" },
-                          }}
-                          image={{
-                            src: galleryImage.image.publicURL,
-                            alt: "small gallery image",
-                            className: "img",
-                          }}
-                          zoomImage={{
-                            src: galleryImage.image.publicURL,
-                            alt: "big gallery image",
-                            style: { backgroundColor: "black" },
-                          }}
-                        />
+                        <Zoom
+                          zoomMargin={40}
+                          overlayBgColorStart={"rgba(0, 0, 0, 0.01)"}
+                          overlayBgColorEnd={"rgba(0, 0, 0, 0.95)"}
+                        >
+                          <img
+                            src={galleryImage.image.publicURL}
+                            alt={title}
+                            className="img"
+                            style={{ backgroundColor: "black" }}
+                          />
+                        </Zoom>
                       )}
                     </div>
                   ))}

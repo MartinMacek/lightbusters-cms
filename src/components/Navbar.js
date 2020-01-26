@@ -49,7 +49,7 @@ const Navbar = class extends React.Component {
               to="/"
               className="navbar-item"
               title="LightBusters"
-              fade
+              fade={true}
               duration={1}
             >
               <img src={logo} alt="LightBusters" style={{ width: "145px" }} />
@@ -78,7 +78,7 @@ const Navbar = class extends React.Component {
             >
               <AniLink
                 to="/portfolio"
-                fade
+                fade={true}
                 duration={1}
                 className="navbar-item"
               >
@@ -88,7 +88,7 @@ const Navbar = class extends React.Component {
                 id="contact-item"
                 className="navbar-item"
                 to="/contact"
-                fade
+                fade={true}
                 duration={1}
                 style={{ marginLeft: "2rem" }}
               >

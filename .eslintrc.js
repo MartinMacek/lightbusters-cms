@@ -9,6 +9,6 @@ module.exports = {
     node: true,
   },
   rules: {
-    "react/jsx-boolean-value": "always",
+    "react/jsx-boolean-value": ["warn", "always"],
   },
 }

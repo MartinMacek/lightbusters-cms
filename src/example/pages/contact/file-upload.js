@@ -58,7 +58,7 @@ export default class Contact extends React.Component {
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                 <input type="hidden" name="form-name" value="file-upload" />
-                <div hidden>
+                <div hidden={true}>
                   <label>
                     Don’t fill this out:{" "}
                     <input name="bot-field" onChange={this.handleChange} />
