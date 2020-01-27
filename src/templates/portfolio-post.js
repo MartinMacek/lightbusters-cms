@@ -20,6 +20,7 @@ export const PortfolioPostTemplate = ({
   description,
   tags,
   url,
+  videoAspect,
   title,
   client,
   coop,
@@ -35,6 +36,9 @@ export const PortfolioPostTemplate = ({
 
   const videoId = url.replace("https://vimeo.com/", "")
   const coopItems = coop != null ? coop.split(";") : []
+
+  console.log(videoAspect)
+  const isUltrawide = videoAspect === "16x9" || videoAspect === "21x9"
 
   return (
     <Layout>
@@ -55,7 +59,7 @@ export const PortfolioPostTemplate = ({
                 style={{
                   padding: "56.25% 0 0 0",
                   position: "relative",
-                  marginBottom: "2rem",
+                  marginBottom: isUltrawide ? "-2.8rem 0 -0.7rem 0" : "2rem",
                 }}
               >
                 <iframe
@@ -75,13 +79,12 @@ export const PortfolioPostTemplate = ({
               </div>
               <script src="https://player.vimeo.com/api/player.js" />
 
-              <div
-                className="mobile-galery"
-                style={{ marginBottom: "3rem", color: "black" }}
-              >
-                {images &&
-                  images.length &&
-                  images.map((galleryImage, key) => (
+              {images && images.length > 0 && (
+                <div
+                  className="mobile-galery"
+                  style={{ marginBottom: "3rem", color: "black" }}
+                >
+                  {images.map((galleryImage, key) => (
                     <div key={key}>
                       {galleryImage.image.publicURL && (
                         <Zoom
@@ -99,7 +102,8 @@ export const PortfolioPostTemplate = ({
                       )}
                     </div>
                   ))}
-              </div>
+                </div>
+              )}
             </div>
           </div>
           <div className="columns">
@@ -171,6 +175,7 @@ PortfolioPostTemplate.propTypes = {
   helmet: PropTypes.object,
   tags: PropTypes.array,
   url: PropTypes.string,
+  videoAspect: PropTypes.oneOf(["4x3", "16x9", "21x9"]),
   date: PropTypes.oneOfType([PropTypes.string, PropTypes.instanceOf(Date)]),
   images: PropTypes.array,
   coop: PropTypes.string,
@@ -179,6 +184,8 @@ PortfolioPostTemplate.propTypes = {
 
 const PortfolioPost = ({ data }) => {
   const { markdownRemark: post } = data
+
+  console.log(post)
 
   return (
     <PortfolioPostTemplate
@@ -196,6 +203,7 @@ const PortfolioPost = ({ data }) => {
       }
       tags={post.frontmatter.tags}
       url={post.frontmatter.url}
+      videoAspect={post.frontmatter.videoAspect}
       coop={post.frontmatter.coop}
       title={post.frontmatter.title}
       client={post.frontmatter.client}
@@ -226,6 +234,7 @@ export const pageQuery = graphql`
         tags
         coop
         url
+        videoAspect
         images {
           image {
             publicURL
