@@ -37,8 +37,7 @@ export const PortfolioPostTemplate = ({
   const videoId = url.replace("https://vimeo.com/", "")
   const coopItems = coop != null ? coop.split(";") : []
 
-  console.log(videoAspect)
-  const isUltrawide = videoAspect === "16x9" || videoAspect === "21x9"
+  const isUltrawide = videoAspect === "21x9"
 
   return (
     <Layout>
@@ -59,7 +58,7 @@ export const PortfolioPostTemplate = ({
                 style={{
                   padding: "56.25% 0 0 0",
                   position: "relative",
-                  marginBottom: isUltrawide ? "-2.8rem 0 -0.7rem 0" : "2rem",
+                  margin: isUltrawide ? "-2.8rem 0 -0.7rem 0" : "0 0 2rem 0",
                 }}
               >
                 <iframe
@@ -184,8 +183,6 @@ PortfolioPostTemplate.propTypes = {
 
 const PortfolioPost = ({ data }) => {
   const { markdownRemark: post } = data
-
-  console.log(post)
 
   return (
     <PortfolioPostTemplate

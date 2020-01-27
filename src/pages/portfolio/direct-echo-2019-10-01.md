@@ -15,6 +15,7 @@ featuredimage: /img/direct.png
 tags:
   - Commercial
 url: "https://vimeo.com/352063219"
+videoAspect: 21x9
 images: []
 order: 0
 ---

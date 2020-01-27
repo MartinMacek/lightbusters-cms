@@ -14,6 +14,7 @@ featuredimage: /img/dudajs.png
 tags:
   - MusicVideo
 url: "https://vimeo.com/310394256"
+videoAspect: 21x9
 images: []
 order: 0
 ---

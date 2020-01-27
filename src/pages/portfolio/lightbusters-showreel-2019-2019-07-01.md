@@ -20,6 +20,7 @@ featuredimage: /img/light.png
 tags:
   - Showreel
 url: "https://vimeo.com/316537032"
+videoAspect: 21x9
 images: []
 order: 0
 ---

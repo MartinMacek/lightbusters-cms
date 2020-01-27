@@ -19,6 +19,7 @@ featuredimage: /img/quintic.png
 tags:
   - CorporateVideo
 url: "https://vimeo.com/310336829"
+videoAspect: 21x9
 images:
   - image: /img/37348099_2181003062123062_5707417593946570752_n.jpg
 order: 0

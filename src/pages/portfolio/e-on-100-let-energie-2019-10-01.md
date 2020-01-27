@@ -18,6 +18,7 @@ featuredimage: /img/eonator.png
 tags:
   - SocialMedia
 url: "https://vimeo.com/358125845"
+videoAspect: 16x9
 images: []
 order: 0
 ---

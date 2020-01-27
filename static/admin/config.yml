@@ -34,6 +34,7 @@ collections:
           label: "Video Aspect",
           name: "videoAspect",
           widget: "select",
+          default: "16x9",
           options:
             [
               { label: "4:3", value: "4x3" },

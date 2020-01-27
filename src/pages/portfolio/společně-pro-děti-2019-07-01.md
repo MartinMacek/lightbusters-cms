@@ -20,6 +20,7 @@ featuredimage: /img/odv.png
 tags:
   - Commercial
 url: "https://vimeo.com/347483320"
+videoAspect: 21x9
 images: []
 order: 0
 ---

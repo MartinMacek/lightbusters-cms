@@ -20,6 +20,7 @@ featuredimage: /img/leomac.png
 tags:
   - Commercial
 url: "https://vimeo.com/272540752"
+videoAspect: 16x9
 images: []
 order: 0
 ---

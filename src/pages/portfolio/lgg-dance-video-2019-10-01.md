@@ -17,6 +17,7 @@ featuredimage: /img/lokales.png
 tags:
   - MusicVideo
 url: "https://vimeo.com/231101114"
+videoAspect: 16x9
 images: []
 order: 0
 ---

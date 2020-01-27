@@ -17,6 +17,7 @@ featuredimage: "/img/snímek-obrazovky-2019-10-11-v\_13.48.09.png"
 tags:
   - Commercial
 url: "https://vimeo.com/337576203"
+videoAspect: 21x9
 images: []
 order: 0
 ---

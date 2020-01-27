@@ -15,6 +15,7 @@ featuredimage: /img/masopust.png
 tags:
   - Event
 url: "https://vimeo.com/318244800"
+videoAspect: 21x9
 images: []
 order: 0
 ---

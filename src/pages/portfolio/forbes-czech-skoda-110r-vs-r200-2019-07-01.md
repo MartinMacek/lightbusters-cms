@@ -16,6 +16,7 @@ featuredimage: /img/forbes.png
 tags:
   - SocialMedia
 url: "https://vimeo.com/279331823"
+videoAspect: 16x9
 images: []
 order: 0
 ---

@@ -21,6 +21,7 @@ featuredimage: /img/tupy.png
 tags:
   - Commercial
 url: "https://vimeo.com/272540718"
+videoAspect: 16x9
 images: []
 order: 0
 ---

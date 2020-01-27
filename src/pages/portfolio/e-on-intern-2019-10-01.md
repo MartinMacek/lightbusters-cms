@@ -16,6 +16,7 @@ featuredimage: /img/eon.png
 tags:
   - InternalVideo
 url: "https://vimeo.com/358123937"
+videoAspect: 16x9
 images: []
 order: 0
 ---

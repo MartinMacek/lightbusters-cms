@@ -22,6 +22,7 @@ featuredimage: /img/dobrovolnik.png
 tags:
   - CorporateVideo
 url: "https://vimeo.com/289336696"
+videoAspect: 21x9
 images: []
 order: 0
 ---
