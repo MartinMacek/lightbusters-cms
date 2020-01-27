@@ -184,6 +184,8 @@ PortfolioPostTemplate.propTypes = {
 const PortfolioPost = ({ data }) => {
   const { markdownRemark: post } = data
 
+  console.log(data)
+
   return (
     <PortfolioPostTemplate
       content={post.html}
