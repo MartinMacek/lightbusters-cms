@@ -27,12 +27,12 @@ class PortfolioRoll extends React.Component {
                       })`,
                     }}
                   >
-                    {/*<PreviewCompatibleImage
-                                          imageInfo={{
-                                            image: post.frontmatter.featuredimage,
-                                            alt: `featured image thumbnail for post ${post.title}`
-                                          }}
-                                        />*/}
+                    {/* {<PreviewCompatibleImage
+                                imageInfo={{
+                                  image: post.frontmatter.featuredimage,
+                                  alt: `featured image thumbnail for post ${post.title}`
+                                }}
+                              />} */}
                   </div>
                 ) : null}
 

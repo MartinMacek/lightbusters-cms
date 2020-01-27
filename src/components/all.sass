@@ -176,6 +176,21 @@ footer.footer
 
 @import "~bulma"
 
+.container
+  width: 100%
+
+@media screen and (min-width: 1024px)
+  .container
+    max-width: 960px;
+
+@media screen and (min-width: 1216px)
+  .container
+    max-width: 1152px;
+
+@media screen and (min-width: 1408px)
+  .container
+    max-width: 1152px;
+
 
 // landing page
 .landing
@@ -184,7 +199,7 @@ footer.footer
   -moz-background-size: 60%
   -o-background-size: 60%
   background-size: 60%
-  min-height: 100vh
+  height: 80vh
   background-position: center
 /*font-family: "Open Sans", sans-serif*/
 
@@ -196,8 +211,8 @@ footer.footer
 
 .portfolio-title
   position: absolute
-  left: 20px
-  bottom: 20px
+  left: 30px
+  bottom: 30px
 
 .page
   background-color: black
@@ -205,7 +220,10 @@ footer.footer
   color: white
   min-height: 100vh
   overflow: hidden
-  padding-bottom: 1.5rem
+  padding-bottom: 100px
+  box-sizing: border-box
+  display: flex;
+  flex-direction: column;
 
 .overlay
   position: absolute
@@ -227,6 +245,7 @@ footer.footer
   text-align: center
   font-weight: bold
   font-weight: 900
+  font-size: 1.4em
 
 .tile-thumbnail
   height: 100%
@@ -295,19 +314,36 @@ footer.footer
   background-size: cover
   background-position-x: center
 
+.content 
+  width: 100%
+
+.content-contact
+  display: flex
+  align-items: center
+  justify-content: center
+  flex: 1
+
 .contact-box
-  padding: 8% 10%
+  padding: 11% 14% 8%
   text-align: center
   border: 1px solid white
-//border: 15px solid transparent
-//-moz-border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch
-//-webkit-border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch  /* Safari 3.1-5 */
-//-o-border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch  /* Opera 11-12.1 */
-//border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 fill stretch
-//border-image-slice: 35%
+  display: flex
+  flex-direction: column
+  // border: 15px solid transparent
+  //-moz-border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch
+  //-webkit-border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch  /* Safari 3.1-5 */
+  //-o-border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 stretch  /* Opera 11-12.1 */
+  // border-image: url("https://media.giphy.com/media/26uf1bGTmHqsyHaaA/giphy.gif") 10 fill stretch
+  //border-image-slice: 35%
 
 .contact-content
   margin-top: 1rem
+
+.contact-footer
+  text-align: center
+  color: #848484
+  span
+    color: #333
 
 .gradient-text
   @include gradient
@@ -384,13 +420,12 @@ footer.footer
 
 .tile-item
   display: inline-block
-  display: box
   width: 33.3%
 
 .ribbon-container
   position: absolute
   right: 0px
-  top: 60%
+  top: 60vh
 
 .ribbon-img
   max-height: 170px
@@ -440,7 +475,7 @@ footer.footer
     outline: none
 
 .contact-socs
-  margin-top: 1rem
+  margin-top: 3rem
   a
     margin: 10px
 

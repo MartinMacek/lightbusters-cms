@@ -52,55 +52,61 @@ export default class Index extends React.Component {
             Vimeo
           </a>
         </div>
-        <span>
-          <div className="content">
-            <div className="contact-box center">
-              {/*<h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+        <div className="content content-contact container">
+          <div className="contact-box">
+            {/*<h1 className="title is-size-2 has-text-weight-bold is-bold-light">
                               Kontakt
                             </h1>*/}
-              <h1
-                style={{ marginBottom: "2rem" }}
-                className="main-color is-size-3"
-              >
-                <b>Lukáš </b>
-                <b>Vojáček</b>
-              </h1>
+            <h1
+              style={{ marginBottom: "2rem" }}
+              className="main-color is-size-3"
+            >
+              <b>Lukáš </b>
+              <b>Vojáček</b>
+            </h1>
 
-              <div className="contact-content">
-                <div>
-                  <b className="contact-header">Telefon</b>
-                  <p>+420 773 900 045</p>
-                </div>
-                <div>
-                  <b className="contact-header">Email</b>
-                  <p>vojacek@lightbusters.cz</p>
-                </div>
-                <div>
-                  <b className="contact-header">IČ</b>
-                  <p>00909581</p>
-                </div>
-                <div className="contact-socs">
-                  <a
-                    title="instagram"
-                    href="https://www.instagram.com/lightbusters/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={instagram} alt="Instagram" className="soc-icon" />
-                  </a>
-                  <a
-                    title="vimeo"
-                    href="https://vimeo.com/user10901553"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img src={vimeo} alt="Vimeo" className="soc-icon" />
-                  </a>
-                </div>
+            <div className="contact-content">
+              <div>
+                <b className="contact-header">Telefon</b>
+                <p>+420 773 900 045</p>
+              </div>
+              <div>
+                <b className="contact-header">Email</b>
+                <a
+                  href="mailto:vojacek@lightbusters.cz"
+                  style={{ display: "block", color: "inherit" }}
+                >
+                  vojacek@lightbusters.cz
+                </a>
+              </div>
+              <div className="contact-socs">
+                <a
+                  title="instagram"
+                  href="https://www.instagram.com/lightbusters/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={instagram} alt="Instagram" className="soc-icon" />
+                </a>
+                <a
+                  title="vimeo"
+                  href="https://vimeo.com/user10901553"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={vimeo} alt="Vimeo" className="soc-icon" />
+                </a>
               </div>
             </div>
           </div>
-        </span>
+        </div>
+        <footer className={"contact-footer"}>
+          <div className={"container"}>
+            LightBusters s.r.o. <span>|</span> IČO: 08772649 <span>|</span>{" "}
+            Společnost je zapsána v Obchodním rejstříku, vedeném Krajským soudem
+            v Ostravě, oddíl C,vložka 80767.
+          </div>
+        </footer>
       </Layout>
     )
   }

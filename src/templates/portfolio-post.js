@@ -124,19 +124,22 @@ export const PortfolioPostTemplate = ({
                       <b>{date.getDate ? date.toLocaleDateString() : date}</b>
                     </div>
 
-                    {tags && tags.length ? (
+                    {/* {tags && tags.length ? (
                       <div>
                         <h4>Kategorie</h4>
                         <ul className="taglist">
                           {tags.map(tag => (
                             <li key={tag + `tag`}>
-                              {/*<Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>*/}
+                              {
+                                //<Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                              }
                               <b>#{tag}</b>
                             </li>
                           ))}
                         </ul>{" "}
                       </div>
-                    ) : null}
+                    ) : null} */}
+
                     {coop && (
                       <div className="title-separator">
                         <h4>Spolupráce</h4>
