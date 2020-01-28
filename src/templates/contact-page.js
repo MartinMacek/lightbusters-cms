@@ -103,6 +103,8 @@ export default class Index extends React.Component {
         <footer className={"contact-footer"}>
           <div className={"container"}>
             LightBusters s.r.o. <span>|</span> IČO: 08772649 <span>|</span>{" "}
+            Sídlo: Ladova 329/25, Hejčín, 779 00 Olomouc
+            <br />
             Společnost je zapsána v Obchodním rejstříku, vedeném Krajským soudem
             v Ostravě, oddíl C,vložka 80767.
           </div>

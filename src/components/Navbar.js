@@ -46,7 +46,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <AniLink
-              to="/"
+              to="/portfolio"
               className="navbar-item"
               title="LightBusters"
               fade={true}

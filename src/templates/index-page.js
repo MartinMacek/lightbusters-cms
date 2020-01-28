@@ -1,5 +1,6 @@
-import React from "react"
-// import { Link, } from "gatsby";
+import React, { useEffect } from "react"
+import { navigate } from "gatsby"
+
 import Navbar from "../components/Navbar"
 import Layout from "../components/Layout"
 //import logo from "../img/logo_2.png";
@@ -122,8 +123,15 @@ export const IndexPageTemplate = () => (
   </Layout>
 )
 
+const RedirectToPortfolio = () => {
+  useEffect(() => {
+    navigate("/portfolio")
+  }, [])
+  return null
+}
+
 const IndexPage = () => {
-  return <IndexPageTemplate />
+  return <RedirectToPortfolio />
 }
 
 export default IndexPage
